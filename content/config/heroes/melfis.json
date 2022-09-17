@@ -1,0 +1,55 @@
+{
+	"melfis" : {
+		"army" : [
+			{ "creature" : "rogue", "max" : 12, "min" : 6 },
+			{ "creature" : "rogue", "max" : 12, "min" : 6 },
+			{ "creature" : "nomad", "max" : 6, "min" : 4 }
+		],
+		"class" : "drifterM",
+		"images" : {
+			"large" : "melfis/melfis58x64.png",
+			"small" : "melfis/melfis48x32.png",
+			"specialtyLarge" : "melfis/rogue_spec44.png",
+			"specialtySmall" : "melfis/rogue_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "luck" },
+			{ "level" : "basic", "skill" : "tactics" }
+			
+		],
+		
+"specialty" : {
+	"bonuses" : {
+		"hate" : {
+			"subtype" : "creature.gog",
+			"type" : "HATE",
+			"val" : 50
+		},
+		"hate2" : {
+			"subtype" : "creature.magog",
+			"type" : "HATE",
+			"val" : 50
+		},
+		"crystal" : {
+			"subtype" : "resource.crystal",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 1
+		},
+		"gems" : {
+			"subtype" : "resource.gems",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 1
+		}
+	}
+},
+		"texts" : {
+			"biography" : "Melfis was taken into the Thieves' Guild when his family was killed by a Magog attack of their village. As such he trained hard in the guild, becoming one of the most skilled of rogues, and rising through the chain of command, always keeping in mind his hatred of the Gog and Magog kind, always knowing he would one day hunt down and destroy the tribe that slaughtered his family.",
+			"name" : "Melfis",
+			"specialty" : {
+				"description" : "{Rogues}\r\n\r\nIncreases Attack and Defence of any Rogues by 5% for every 2 levels. Also all creatures under Melfis command hate Gogs and Magogs. Generates daily one gem and crystal.",
+				"name" : "Rogues/Gold",
+				"tooltip" : "Bonus: Rogues, gold"
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+{
+	"romires" : {
+		"army" : [
+			{ "creature" : "nomad", "max" : 8, "min" : 4 },
+			{ "creature" : "rogue", "max" : 16, "min" : 6 },
+			{ "creature" : "nomad", "max" : 6, "min" : 3 }
+		],
+		"class" : "drifterM",
+		"images" : {
+			"large" : "romires/romires58x64.png",
+			"small" : "romires/romires48x32.png",
+			"specialtyLarge" : "romires/nomad_spec44.png",
+			"specialtySmall" : "romires/nomad_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "tactics" },
+			{ "level" : "basic", "skill" : "resistance" },
+			{ "level" : "basic", "skill" : "logistics" }
+			
+		],
+"specialty" : {
+	"base" : { "val" : 1 },
+	"bonuses" : {
+		"ADDITIONAL_RETALIATION" : {
+			"limiters" : [
+				{
+					"parameters" : [ "nomad", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"updater" : { "parameters" : [ 3 ], "type" : "GROWS_WITH_LEVEL" },
+			"type" : "ADDITIONAL_RETALIATION"
+		},
+		"gems" : {
+			"subtype" : "resource.gems",
+			"type" : "GENERATE_RESOURCE"
+		},
+		"speed" : {
+			"limiters" : [
+				{
+					"parameters" : [ "nomad", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"updater" : { "parameters" : [ 3 ], "type" : "GROWS_WITH_LEVEL" },
+			"type" : "STACKS_SPEED"
+		}
+	}
+},
+		"texts" : {
+			"biography" : "Romires is a skilled equestrian with few rivals. His skills on horseback are so renowned that his tribe follows him with unswerving loyalty, calling themselves the 'Knights of Romires'.",
+			"name" : "Romires",
+			"specialty" : {
+				"description" : "{Nomads}\r\n\r\nIncreases speed of Nomads by 1 and grants them one additional attack. For that, Nomads generate one shiny gem per day.",
+				"name" : "Nomads/Gems",
+				"tooltip" : "Bonus: Nomads, gems"
+			}
+		}
+	}
+}

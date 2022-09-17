@@ -1,0 +1,63 @@
+{
+	"xanthus" : {
+		"army" : [
+			{ "creature" : "goldGolem", "max" : 4, "min" : 2 },
+			{ "creature" : "goldGolem", "max" : 4, "min" : 2 },
+			{ "creature" : "ironGolem", "max" : 6, "min" : 3 }
+		],
+		"class" : "drifterM",
+		"images" : {
+			"large" : "xanthus/xanthus58x64.png",
+			"small" : "xanthus/xanthus48x32.png",
+			"specialtyLarge" : "xanthus/goldGolem_spec44.png",
+			"specialtySmall" : "xanthus/goldGolem_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "tactics" },
+			{ "level" : "basic", "skill" : "resistance" },
+			{ "level" : "basic", "skill" : "estates" }
+			
+		],
+		
+"specialty" : {
+	"bonuses" : {
+		"DAEMON_SUMMONING" : {
+			"limiters" : [
+				{
+					"parameters" : [ "goldGolem", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "creature.ironGolem",
+			"type" : "DAEMON_SUMMONING",
+			"val" : 10
+		},
+		"DAEMON_SUMMONING2" : {
+			"limiters" : [
+				{
+					"parameters" : [ "diamondGolem", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "creature.stoneGolem",
+			"type" : "DAEMON_SUMMONING",
+			"val" : 10
+		},
+		"gold" : {
+			"subtype" : "resource.gold",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 350
+		}
+	}
+},
+		"texts" : {
+			"biography" : "Xanthus rose to power during the wrath of the gods, quickly becoming known as the 'Lord of Golems' for his ability to lead his fellows in battle with almost supernatural ability, summoning many of his troops seemingly from thin air.",
+			"name" : "Xanthus",
+			"specialty" : {
+				"description" : "{Golems}\r\n\r\nDuring battle from the dead stack Gold Golems can summon Iron Golems and Diamond Golems can summon Stone Golems. Beside heroes increases kingdom's income by 350.",
+				"name" : "Golems/Gold",
+				"tooltip" : "Bonus: Golems, gold"
+			}
+		}
+	}
+}

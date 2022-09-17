@@ -1,0 +1,53 @@
+{
+	"ernest" : {
+		"army" : [
+			{ "creature" : "peasant", "max" : 50, "min" : 35 },
+			{ "creature" : "pikeman", "max" : 40, "min" : 20 },
+			{ "creature" : "pikeman", "max" : 30, "min" : 15 }
+		],
+		"class" : "drifterM",
+		"images" : {
+			"large" : "ernest/ernest58x64.png",
+			"small" : "ernest/ernest48x32.png",
+			"specialtyLarge" : "ernest/peasant_spec44.png",
+			"specialtySmall" : "ernest/peasant_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "firstAid" },
+			{ "level" : "basic", "skill" : "logistics" },
+			{ "level" : "advanced", "skill" : "estates" }
+			
+		],
+		"specialty" : {
+			"bonuses" : {
+				"speed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 2,
+						"limiters" : [ { "parameters" : [ "peasant", false ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"updater" : { "parameters" : [ 4 ], "type" : "GROWS_WITH_LEVEL" }
+				},
+				"damage" : {
+						"limiters" : [ { "parameters" : [ "peasant", false ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"updater" : { "parameters" : [ 4 ], "type" : "GROWS_WITH_LEVEL" },
+						"type" : "CREATURE_DAMAGE",
+						"val" : 2,
+						"subtype" : 0
+				},
+				"gold" :{ 
+						"subtype" : "resource.gold", 
+						"type" : "GENERATE_RESOURCE", 
+						"val" : 350 
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Ernest has long been a well respected member of the community. When troubles and war arise, Ernest is usually the first to step up and organize the peasantry to defend their homes, organizing them into a force that would make any general proud.",
+			"name" : "Ernest",
+			"specialty" : {
+				"description" : "{Peasants}\r\n\r\nIncreases speed and damage of Peasants by 1 for every 5 levels. Beside increase kingdom's income by 350.",
+				"name" : "Peasants/Gold",
+				"tooltip" : "Bonus: Peasants, gold"
+			}
+		}
+	}
+}

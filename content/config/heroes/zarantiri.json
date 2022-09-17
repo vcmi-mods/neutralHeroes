@@ -1,0 +1,53 @@
+{
+	"zarantiri" : {
+		"army" : [
+			{ "creature" : "mummy", "max" : 8, "min" : 4 },
+			{ "creature" : "mummy", "max" : 6, "min" : 4 },
+			{ "creature" : "walkingDead", "max" : 12, "min" : 6 }
+		],
+		"class" : "drifterF",
+		"images" : {
+			"large" : "zarantiri/zarantiri58x64.png",
+			"small" : "zarantiri/zarantiri48x32.png",
+			"specialtyLarge" : "zarantiri/mummy_spec44.png",
+			"specialtySmall" : "zarantiri/mummy_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "necromancy" },
+			{ "level" : "advanced", "skill" : "scouting" }
+			
+		],
+		
+"specialty" : {
+	"bonuses" : {
+		"CREATURE_DAMAGE" : {
+			"limiters" : [
+				{
+					"parameters" : [ "mummy", true ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"updater" : { "parameters" : [ 3 ], "type" : "GROWS_WITH_LEVEL" },
+			"subtype" : 2,
+			"type" : "CREATURE_DAMAGE"
+		},
+		"curse" : {
+			"addInfo" : 0,
+			"subtype" : "spell.curse",
+			"type" : "SPECIAL_PECULIAR_ENCHANT"
+		}
+	}
+},
+		
+		"female" : true,
+		"texts" : {
+			"biography" : "Zarantiri is a powerful mummy, who is said to have been chosen by the gods themselves to wreak havoc and be an agent of chaos. Zarantiri seems to have been blessed with the ability to strengthen other mummies in her command, and to curse her enemies with powerful curses.",
+			"name" : "Zarantiri",
+			"specialty" : {
+				"description" : "{Mummies}\r\n\r\nIncreases maximum damage of any Mummies by 5% for every 3 levels. Beside hero can cast Curse with increased effect.",
+				"name" : "Mummies/Curse",
+				"tooltip" : "Bonus: Mummies, Curse"
+			}
+		}
+	}
+}

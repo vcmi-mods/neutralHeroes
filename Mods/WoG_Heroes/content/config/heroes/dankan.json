@@ -1,0 +1,79 @@
+{
+	"dankan" : {
+		"army" : [
+			{ "creature" : "nightmare", "max" : 4, "min" : 2 },
+			{ "creature" : "werewolf", "max" : 6, "min" : 3 },
+			{ "creature" : "hellHound", "max" : 8, "min" : 4 }
+		],
+		"class" : "drifterM",
+		"images" : {
+			"large" : "dankan/dankan58x64.png",
+			"small" : "dankan/dankan48x32.png",
+			"specialtyLarge" : "dankan/nightmare_spec44.png",
+			"specialtySmall" : "dankan/nightmare_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "intelligence" },
+			{ "level" : "basic", "skill" : "offence" },
+			{ "level" : "basic", "skill" : "sorcery" }
+		],
+"specialty" : {
+	"bonuses" : {
+		"HATE" : {
+			"limiters" : [
+				{
+					"parameters" : [ "nightmare", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "creature.warUnicorn",
+			"type" : "HATE",
+			"val" : 50
+		},
+		"NONEVIL_ALIGNMENT_MIX" : { "type" : "NONEVIL_ALIGNMENT_MIX" },
+		"attack" : {
+			"limiters" : [
+				{
+					"parameters" : [ "nightmare", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "primSkill.attack",
+			"type" : "PRIMARY_SKILL",
+			"updater" : {
+				"parameters" : [ 18, 6 ],
+				"type" : "GROWS_WITH_LEVEL"
+			}
+		},
+		"defence" : {
+			"limiters" : [
+				{
+					"parameters" : [ "nightmare", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "primSkill.defence",
+			"type" : "PRIMARY_SKILL",
+			"updater" : {
+				"parameters" : [ 16, 6 ],
+				"type" : "GROWS_WITH_LEVEL"
+			}
+		},
+		"sulfur" : {
+			"subtype" : "resource.sulfur",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 1
+		}
+	}
+},
+		"texts" : {
+			"biography" : "Once a great leader of the Nomad nation, Dankan and his fellow Nomads fell in a great war, ambushed by elves and their War Unicorns. It is said his will was so strong to win that he returned to life as a revenant spirit, his nomadic tribe rising with him, their horses turned to Nightmares.",
+			"name" : "Dankan",
+			"specialty" : {
+				"description" : "{Nightmares}\r\n\r\nIncreases Attack and Defence of any Nightmares by 5% for every 6 levels. Also Nightmares hates War Unicorns. Besides, under Dankan's command good and neutral creatures can be mixed without morale penalty. Also Dankan daily generates 1 sulfur.",
+				"name" : "Nightmares/Sulfur",
+				"tooltip" : "Nightmares, Sulfur"
+			}
+		}
+	}
+}

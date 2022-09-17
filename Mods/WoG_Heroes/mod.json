@@ -1,0 +1,25 @@
+{
+	"author" : "avatar",
+	"contact" : "",
+	"description" : "WoG neutral heroes",
+	"licenseName" : "",
+	"licenseURL" : "",
+	"modType" : "Heroes",
+	"name" : "WoG Neutral Heroes",
+	"heroes" : [
+		"config/heroes/cristian",
+		"config/heroes/cyrilla",
+		"config/heroes/dankan",
+		"config/heroes/hegnaar",
+		"config/heroes/morgana",
+		"config/heroes/rossa",
+		"config/heroes/sergiush",
+		"config/heroes/shrin",
+		"config/heroes/rashnar",
+		"config/heroes/sherkan",
+		"config/heroes/unrish"
+		],
+	"depends" : [ "wake-of-gods" ],
+	"keepDisabled" : true,
+	"version" : "1.0"
+}
