@@ -5,6 +5,13 @@
 	"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
 	"modType" : "Heroes",
 	"name" : "Neutral Heroes",
+	"changelog" :
+	{
+		"1.0"   : ["Initial release"],
+		"1.01"  : ["fixes"],
+		"1.02"   : ["Add female hero sprites"],
+		"1.03"   : ["Add two HotA heroes"]
+	}, 
 	"heroClasses" : 
 	[ 
 		"config/drifterMale",
@@ -23,12 +30,5 @@
 	"creatures" :
 	[
 		"config/nhHalfling"
-	],
-	"changelog" :
-    {
-        "1.0"   : ["Initial release"],
-		"1.01"  : ["fixes"],
-		"1.02"   : ["Add female hero sprites"],
-		"1.03"   : ["Add two HotA heroes"]
-    } 
+	]
 }
