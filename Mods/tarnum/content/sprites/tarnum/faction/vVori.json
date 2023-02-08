@@ -1,0 +1,13 @@
+{
+	"vVori" :
+	{
+		"nativeTerrain": "snow",
+		"alignment" : "neutral",
+		"creatureBackground" :
+		{
+			"120px" : "c120.png",
+			"130px" : "c130.png"
+		},
+		"town" : null
+    }
+}

@@ -1,0 +1,53 @@
+{
+	"vLars" : {
+		"army" : [
+			{ "creature" : "grandElf", "max" : 10, "min" : 6 },
+			{ "creature" : "ballista", "max" : 1, "min" : 1 },
+			{ "creature" : "woodElf", "max" : 8, "min" : 4 }
+		],
+		"class" : "vJarl",
+		"images" : {
+			"large" : "heroes/lars/larsBig.png",
+			"small" : "heroes/lars/larsSmall.png",
+			"specialtyLarge" : "heroes/lars/spec44.png",
+			"specialtySmall" : "heroes/lars/spec32.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "pathfinding" },
+			{ "level" : "basic", "skill" : "scouting" }
+			
+		],
+		"specialty" : [
+			{
+				"bonuses" : [
+					{
+						"limiters" : [ { "parameters" : [ "peasant", false ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"type" : "STACKS_SPEED",
+						"val" : 2
+					},
+					{
+						"limiters" : [ { "parameters" : [ "peasant", false ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"type" : "CREATURE_DAMAGE",
+						"val" : 2,
+						"subtype" : 0
+					},
+					{ 
+						"subtype" : "resource.gold", 
+						"type" : "GENERATE_RESOURCE", 
+						"val" : 350 
+					}					
+				],
+				"growsWithLevel" : true
+			}
+		],
+		"texts" : {
+			"biography" : "Ernest has long been a well respected member of the community. When troubles and war arise, Ernest is usually the first to step up and organize the peasantry to defend their homes, organizing them into a force that would make any general proud.",
+			"name" : "Ernest",
+			"specialty" : {
+				"description" : "{Peasants}\r\n\r\nIncreases speed and damage of Peasants by 2. Beside increase kingdom's income by 350.",
+				"name" : "Peasants/Gold",
+				"tooltip" : "Bonus: Peasants, gold"
+			}
+		}
+	}
+}

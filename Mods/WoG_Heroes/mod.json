@@ -1,5 +1,5 @@
 {
-	"author" : "avatar",
+	"author" : "",
 	"contact" : "",
 	"description" : "WoG neutral heroes",
 	"licenseName" : "",
@@ -19,7 +19,7 @@
 		"config/heroes/sherkan",
 		"config/heroes/unrish"
 		],
-	"depends" : [ "wake-of-gods" ],
+	"depends" : [ "wog+" ],
 	"keepDisabled" : true,
 	"version" : "1.0"
 }

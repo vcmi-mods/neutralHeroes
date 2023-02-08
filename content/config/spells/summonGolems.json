@@ -1,0 +1,94 @@
+{
+	"summonIronGolem" : {
+		"type": "ability",
+		"targetType" : "CREATURE",
+		"name": "Summon Iron Golems",
+		"school" : {},
+		"level": 2,
+		"power": 50,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"animation":{
+		},
+		"sounds": {
+			"cast": "RESURECT"
+		},
+		"levels" : {
+			"base": {
+				"description" : "",
+				"aiValue" : 0,
+				"power" : 40,
+				"cost" : 1,
+				"range" : "0",
+				"battleEffects":{
+					"demonSummon":{
+						"id":"ironGolem",
+						"permanent":true,
+						"summonByHealth" : false,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none" :{},
+			"basic" :{},
+			"advanced" :{},
+			"expert" :{}
+		},
+		"flags" : {
+			"rising": true,
+			"positive": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute"
+			}
+		}
+	},
+	"summonStoneGolem" : {
+		"type": "ability",
+		"targetType" : "CREATURE",
+		"name": "Summon Stone Golems",
+		"school" : {},
+		"level": 2,
+		"power": 50,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"animation":{
+		},
+		"sounds": {
+			"cast": "RESURECT"
+		},
+		"levels" : {
+			"base": {
+				"description" : "",
+				"aiValue" : 0,
+				"power" : 40,
+				"cost" : 1,
+				"range" : "0",
+				"battleEffects":{
+					"demonSummon":{
+						"id":"stoneGolem",
+						"permanent":true,
+						"summonByHealth" : false,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none" :{},
+			"basic" :{},
+			"advanced" :{},
+			"expert" :{}
+		},
+		"flags" : {
+			"rising": true,
+			"positive": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute"
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"meriss" : {
+		"army" : [
+			{ "creature" : "pixie", "max" : 20, "min" : 10 },
+			{ "creature" : "waterElemental", "max" : 7, "min" : 4 },
+			{ "creature" : "mdtMermaid", "max" : 2, "min" : 1 }
+		],
+		"class" : "drifter",
+		"images" : {
+			"large" : "meriss/meriss_portraitBig.png",
+			"small" : "meriss/meriss_portraitSmall.png",
+			"specialtyLarge" : "meriss/meriss-specialityBig.png",
+			"specialtySmall" : "meriss/meriss-specialitySmall.png"
+		},
+		"skills" : [
+			{ "level" : "expert", "skill" : "navigation" },
+			{ "level" : "basic", "skill" : "leadership" },
+			{ "level" : "basic", "skill" : "waterMagic" },
+			
+		],
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"parameters" : [ "mdtMermaid", false ],
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+				]
+			},
+			"bonuses" : {
+				"attack" : {
+					"subtype" : "primSkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"updater" : {
+						"parameters" : [ 13, 4 ],
+						"type" : "GROWS_WITH_LEVEL"
+					}
+				},
+				"defence" : {
+					"subtype" : "primSkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"updater" : {
+						"parameters" : [ 7, 4 ],
+						"type" : "GROWS_WITH_LEVEL"
+					}
+				},
+				"addAttack" : {
+					"type" : "ADDITIONAL_ATTACK",
+					"val" : 1
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Meris is said to be one of the most beautiful and most deadly of the mermaids of the seas. A militant leader, she fights to make sure that the land-dwellers keep their feet on solid ground and leave her seas alone.",
+			"name" : "Meris",
+			"specialty" : {
+				"description" : "{Mermaid}\r\n\r\nIncreases Attack and Defence of any Mermaids by 5% for every 3 levels. Also Mermaids gain additional attack",
+				"name" : "Mermaid",
+				"tooltip" : "Bonus: Mermaids"
+			}
+		}
+	}
+}

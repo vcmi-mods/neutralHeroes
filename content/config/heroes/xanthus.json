@@ -19,37 +19,68 @@
 			
 		],
 		
-"specialty" : {
-	"bonuses" : {
-		"DAEMON_SUMMONING" : {
-			"limiters" : [
+		"specialty" : {
+			"bonuses" : {
+				"casts":{
+					"type" : "CASTS",
+					"val": 3,
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+							"parameters": [ "goldGolem", false ]
+					} ]
+				},
+				"casts2":{
+					"type" : "CASTS",
+					"val": 3,
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+							"parameters": [ "diamondGolem", false ]
+					} ]
+				},
+				"ironGolemSummoning": {
+					"type" : "SPELLCASTER",
+					"subtype": "spell.summonIronGolem",
+					"val": 0,
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+							"parameters": [ "goldGolem", false ]
+					} ]
+				},
+				"summonIronPower" : {
+					"type" : "SPECIFIC_SPELL_POWER",
+					"subtype" : "spell.summonIronGolem",
+					"val" : 100,
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+						"parameters": [ "goldGolem", false ]
+					} ]
+				},
+				"stoneGolemSummoning": {
+					"type" : "SPELLCASTER",
+					"subtype": "spell.summonStoneGolem",
+					"val": 0,
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+							"parameters": [ "diamondGolem", false ]
+					} ]
+					},
+				"summonStonePower" : 
 				{
-					"parameters" : [ "goldGolem", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
+				"type" : "SPECIFIC_SPELL_POWER",
+					"subtype" : "spell.summonStoneGolem",
+					"val" : 100,
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+						"parameters": [ "diamondGolem", false ]
+					} ]
+				},
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+				"val" : 350
 				}
-			],
-			"subtype" : "creature.ironGolem",
-			"type" : "DAEMON_SUMMONING",
-			"val" : 10
+			}
 		},
-		"DAEMON_SUMMONING2" : {
-			"limiters" : [
-				{
-					"parameters" : [ "diamondGolem", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"subtype" : "creature.stoneGolem",
-			"type" : "DAEMON_SUMMONING",
-			"val" : 10
-		},
-		"gold" : {
-			"subtype" : "resource.gold",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 350
-		}
-	}
-},
 		"texts" : {
 			"biography" : "Xanthus rose to power during the wrath of the gods, quickly becoming known as the 'Lord of Golems' for his ability to lead his fellows in battle with almost supernatural ability, summoning many of his troops seemingly from thin air.",
 			"name" : "Xanthus",

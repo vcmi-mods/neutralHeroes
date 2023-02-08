@@ -1,0 +1,40 @@
+{
+	"vBerserker" : {
+//		"abilities" : { "shield" : { "subtype" : 0, "type" : "GENERAL_DAMAGE_REDUCTION", "val" : 30 } },
+		"advMapAmount" : { "max" : 12, "min" : 5 },
+		"aiValue" : 1415,
+		"attack" : 13,
+		"cost" : { "gold" : 1000 },
+		"damage" : { "max" : 22, "min" : 18 },
+		"defense" : 16,
+		"faction" : "cove",
+		"fightValue" : 1415,
+		"graphics" : {
+			"animation" : "creatures/battle/Cbers2.def",
+			"animationTime" : { "attack" : 1, "flight" : 1, "idle" : 10, "walk" : 1 },
+			"iconLarge" : "creatures/iconsBig/Cbers1.png",
+			"iconSmall" : "creatures/iconsSmall/Cbers0007.png",
+			"map" : "creatures/map/Cbers_map.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 2,
+		"hitPoints" : 80,
+		"level" : 6,
+		"name" : { "plural" : "Nix", "singular" : "Nix" },
+		"sound" : {
+			"attack" : "hota/nix/attack.wav",
+			"defend" : "hota/nix/defend.wav",
+			"killed" : "hota/nix/kill.wav",
+			"move" : "hota/nix/move.wav",
+			"wince" : "hota/nix/wince.wav"
+		},
+		"speed" : 6,
+		"stackExperience" : [
+			{
+				"bonus" : { "subtype" : 1, "type" : "GENERAL_DAMAGE_REDUCTION" },
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]
+			}
+		],
+		"upgrades" : [ "nixWarrior" ]
+	}
+}
