@@ -5,6 +5,10 @@
 	"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
 	"modType" : "Heroes",
 	"name" : "Neutral Heroes",
+	"compatibility" :
+	{
+		"min" : "1.2.0"
+	},
 	"changelog" :
     {
 		"1.0"   : ["Initial release"],
