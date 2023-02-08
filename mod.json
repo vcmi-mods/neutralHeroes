@@ -7,7 +7,7 @@
 	"name" : "Neutral Heroes",
 	"changelog" :
     {
-        "1.0"   : ["Initial release"],
+		"1.0"   : ["Initial release"],
 		"1.01"  : ["fixes"],
 		"1.02"   : ["Add female hero sprites"],
 		"1.03"   : ["Add two HotA heroes"],
