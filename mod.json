@@ -1,5 +1,5 @@
 {
-	"version" : "1.04",
+	"version" : "1.05",
 	"author" : "avatar, Nephretes, Witchking, draeganfire, MK. Portraits are taken from various sources from the net.",
 	"contact" : "http://www.vault.acidcave.net/download.php?id=553",
 	"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
@@ -15,7 +15,8 @@
 		"1.01"  : ["fixes"],
 		"1.02"   : ["Add female hero sprites"],
 		"1.03"   : ["Add two HotA heroes"],
-		"1.04"   : ["New DAEMON_SUMMONING format"]
+		"1.04"   : ["New DAEMON_SUMMONING format"],
+		"1.05"   : ["Update to vcmi-1.2"]
     },
 	"heroClasses" : 
 	[ 

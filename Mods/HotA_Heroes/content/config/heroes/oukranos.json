@@ -30,7 +30,9 @@
 		},
 		"hypnotize" : {
 			"subtype" : "spell.hypnotize",
-			"type" : "MAXED_SPELL"
+			"type" : "SPELL",
+			"val" : 3,
+			"valueType" : "INDEPENDENT_MAX"
 		},
 		"speed" : {
 			"addInfo" : 5,
