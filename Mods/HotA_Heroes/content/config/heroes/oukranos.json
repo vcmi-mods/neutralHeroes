@@ -29,10 +29,9 @@
 			"type" : "BLOCKS_RETALIATION"
 		},
 		"hypnotize" : {
+			"addInfo" : 3,
 			"subtype" : "spell.hypnotize",
-			"type" : "SPELL",
-			"val" : 3,
-			"valueType" : "INDEPENDENT_MAX"
+			"type" : "SPECIAL_FIXED_VALUE_ENCHANT"
 		},
 		"speed" : {
 			"addInfo" : 5,
