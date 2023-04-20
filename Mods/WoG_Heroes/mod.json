@@ -19,7 +19,7 @@
 		"config/heroes/sherkan",
 		"config/heroes/unrish"
 		],
-	"depends" : [ "wog+" ],
+	"depends" : [ "wake-of-gods" ],
 	"keepDisabled" : true,
 	"version" : "1.0"
 }
