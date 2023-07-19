@@ -11,9 +11,12 @@
 		"config/heroes/oukranos",
 		"config/heroes/godfrey",
 		"config/heroes/amron"
-		],
-	"depends" :
-		[ "hota.cove" ],
+	],
+	"depends" : [ 
+		"hota.cove",
+		"hota.neutralcreatures",
+		"hota.interference"
+	],
 	"keepDisabled" : true,		
-	"version" : "1.1"
+	"version" : "1.2"
 }

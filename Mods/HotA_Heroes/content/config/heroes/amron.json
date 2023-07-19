@@ -27,7 +27,9 @@
 			},
 			"magicResistance" :
 			{
-				"type" : "DIRECT_DAMAGE_IMMUNITY",
+				"subtype" : -1,
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100,
 				"limiters" : [
 				{
 					"parameters" : [ "steelGolem", false ],
