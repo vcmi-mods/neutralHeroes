@@ -1,7 +1,7 @@
 {
 	"morgana" : {
 		"army" : [
-			{ "creature" : "sorceress", "max" : 4, "min" : 2 },
+			{ "creature" : "wogSorceress", "max" : 4, "min" : 2 },
 			{ "creature" : "santaGremlin", "max" : 12, "min" : 6 },
 			{ "creature" : "enchanter", "max" : 3, "min" : 1 }
 		],
@@ -34,7 +34,7 @@
 		"CHANGES_SPELL_COST_FOR_ENEMY" : {
 			"limiters" : [
 				{
-					"parameters" : [ "sorceress", false ],
+					"parameters" : [ "wogSorceress", false ],
 					"type" : "CREATURE_TYPE_LIMITER"
 				}
 			],
