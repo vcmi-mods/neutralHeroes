@@ -21,6 +21,13 @@
 		"1.07"   : ["fix for wog Sorceresses"],
 		"1.08"   : ["Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"]
     },
+	"german" : {
+		"name" : "Neutrale Helden",
+		"description" : "Mod erstellt neutrale Heldenklasse namens Drifter. Drifter können in Tavers angeheuert werden, können aber nicht als Starthelden gewählt werden.",
+		"translations" : [
+			"translation/neutral-heroes/german.json"
+		]
+	},
 	"chinese" : {
 		"name" : "中立英雄",
 		"translations" : [
