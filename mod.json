@@ -1,5 +1,5 @@
 {
-	"version" : "1.08",
+	"version" : "1.09",
 	"author" : "avatar, Nephretes, Witchking, draeganfire, MK. Portraits are taken from various sources from the net.",
 	"contact" : "http://www.vault.acidcave.net/download.php?id=553",
 	"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
@@ -19,7 +19,8 @@
 		"1.05"   : ["Update to vcmi-1.2"],
 		"1.06"   : ["Update to vcmi-1.3"],
 		"1.07"   : ["fix for wog Sorceresses"],
-		"1.08"   : ["Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"]
+		"1.08"   : ["Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"],
+		"1.09"   : ["One more fix for wog Sorceresses"]
     },
 	"german" : {
 		"name" : "Neutrale Helden",
