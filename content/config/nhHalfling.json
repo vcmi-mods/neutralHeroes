@@ -1,28 +1,66 @@
 {
 	"nhHalfling":
 	{
+		"special" : true,
 		"name" :
 		{
-			"plural" : "Scouts",
-			"singular" : "Scout"
+			"singular" : "Scout",
+			"plural" : "Scouts"
 		},
-		"special" : true,
 		"faction" : "neutral",
-		"aiValue" : 1021,
+		"level" : 0,
+		"speed" : 5,
+		"hitPoints" : 60,
+		"shots" : 24,
 		"attack" : 5,
+		"defense" : 5,
 		"damage" :
 		{
-			 "max" : 15,
-			 "min" : 5
+			"min" : 5,
+			"max" : 15
 		},
-		"defense" : 5,
 		"fightValue" : 916,
+		"aiValue" : 1021,
+		"growth" : 1,
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.misfortune",
+				"val" : 3
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			}
+		},
 		"graphics" :
 		{
-			"animation" : "scout/CHalful.def",
-			"map" : "scout/mapCHalful.def",
 			"iconSmall" : "scout/chalf63.png",
 			"iconLarge" : "scout/chalf59.png",
+			"map" : "scout/mapCHalful.def",
+			"animation" : "scout/CHalful.def",
 			"timeBetweenFidgets" : 1,
 			"animationTime" :
 			{
@@ -47,10 +85,6 @@
 
 			}
 		},
-		"growth" : 1,
-		"hitPoints" : 60,
-		"level" : 0,
-		"shots" : 24,
 		"sound" :
 		{
 			"attack": "HALFATTK.wav",
@@ -59,40 +93,6 @@
 			"move": "HALFMOVE.wav",
 			"shoot": "HALFSHOT.wav",
 			"wince": "HALFWNCE.wav"
- 		},
-		"speed" : 5,
-		"abilities" :
-		{
-		    "canShoot" :
-			{
-				"type" : "SHOOTER"
-			},
-			"magicResistance" :
-			{
-				"type" : "MAGIC_RESISTANCE",
-				"val" : 5
-			},
-			"castsAmount" :
-			{
-				"type" : "CASTS",
-				"val" : 1
-			},
-			"enchant" :
-			{
-				"type" : "CREATURE_ENCHANT_POWER",
-				"val" : 1
-			},
-			"spellpower" :
-			{
-				"type" : "CREATURE_SPELL_POWER",
-				"val" : 100
-			},
-			"canCast" :
-			{
-				"type" : "SPELLCASTER",
-				"subtype" : "spell.misfortune",
-				"val" : 3
-			}
-	    }
+		}
 	}
 }
