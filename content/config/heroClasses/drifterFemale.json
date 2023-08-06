@@ -1,8 +1,8 @@
 {
-	"drifterM" : {
-		"affinity" : "might",
-		"mapObject" : { "templates" : { "default" : { "animation" : "drifter/nhDrifterMaleMap", "editorAnimation": "drifter/nhDrifterMaleMap_" } } },
-		"animation":  { "battle" : { "male" : "drifter/nhDrifterMale",  "female" : "drifter/nhDrifterMale" }},
+	"drifterF" : {
+		"affinity" : "magic",
+		"mapObject" : { "templates" : { "default" : { "animation" : "heroClasses/drifter/nhDrifterFemaleMap", "editorAnimation": "heroClasses/drifter/nhDrifterFemaleMap_" } } },
+		"animation":  { "battle" : { "male" : "heroClasses/drifter/nhDrifterFemale",  "female" : "heroClasses/drifter/nhDrifterFemale" }},
 		"commander" : "nhHalfling",
 		"defaultTavern" : 5,
 		"faction" : "neutral",

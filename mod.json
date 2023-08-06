@@ -37,8 +37,8 @@
 	},
 	"heroClasses" :
 	[
-		"config/drifterMale",
-		"config/drifterFemale"
+		"config/heroClasses/drifterMale",
+		"config/heroClasses/drifterFemale"
 	],
 	"heroes" : [
 		"config/heroes/kharnus",
