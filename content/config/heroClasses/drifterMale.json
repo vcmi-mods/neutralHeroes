@@ -1,15 +1,30 @@
 {
 	"drifterM" : {
-		"affinity" : "might",
-		"mapObject" : { "templates" : { "default" : { "animation" : "heroClasses/drifter/nhDrifterMaleMap", "editorAnimation": "heroClasses/drifter/nhDrifterMaleMap_" } } },
-		"animation":  { "battle" : { "male" : "heroClasses/drifter/nhDrifterMale",  "female" : "heroClasses/drifter/nhDrifterMale" }},
-		"commander" : "nhHalfling",
-		"defaultTavern" : 5,
-		"faction" : "neutral",
-		"highLevelChance" : { "attack" : 40, "defence" : 30, "knowledge" : 10, "spellpower" : 20 },
-		"lowLevelChance" : { "attack" : 35, "defence" : 40, "knowledge" : 10, "spellpower" : 15 },
 		"name" : "Drifter",
-		"primarySkills" : { "attack" : 1, "defence" : 3, "knowledge" : 1, "spellpower" : 1 },
+		"faction" : "neutral",
+		"affinity" : "might",
+		"defaultTavern" : 5,
+		"commander" : "nhHalfling",
+		"animation":  {
+			"battle" : {
+				"male" : "heroClasses/drifter/nhDrifterMale",
+				"female" : "heroClasses/drifter/nhDrifterMale"
+			}
+		},
+		"mapObject" : {
+			"templates" : {
+				"default" : {
+					"animation" : "heroClasses/drifter/nhDrifterMaleMap",
+					"editorAnimation": "heroClasses/drifter/nhDrifterMaleMap_"
+				}
+			}
+		},
+		"primarySkills" : {
+			"attack" : 1,
+			"defence" : 3,
+			"knowledge" : 1,
+			"spellpower" : 1
+		},
 		"secondarySkills" : {
 			"airMagic" : 4,
 			"archery" : 8,
@@ -39,6 +54,18 @@
 			"waterMagic" : 4,
 			"wisdom" : 6,
 			"firstAid" : 7
+		},
+		"lowLevelChance" : {
+			"attack" : 35,
+			"defence" : 40,
+			"knowledge" : 10,
+			"spellpower" : 15
+		},
+		"highLevelChance" : {
+			"attack" : 40,
+			"defence" : 30,
+			"knowledge" : 10,
+			"spellpower" : 20
 		},
 		"tavern" : {
 			"castle" : 4,
