@@ -31,6 +31,7 @@
 	},
 	"chinese" : {
 		"name" : "中立英雄",
+		"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
 		"translations" : [
 			"translation/neutral-heroes/chinese.json"
 		]
