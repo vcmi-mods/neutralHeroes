@@ -1,6 +1,6 @@
 {
-	"class" : "drifterM",
 	"romires" : {
+	"class" : "drifterM",
 		"army" : [
 			{
 				"creature" : "nomad",
