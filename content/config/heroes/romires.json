@@ -1,11 +1,23 @@
 {
+	"class" : "drifterM",
 	"romires" : {
 		"army" : [
-			{ "creature" : "nomad", "max" : 8, "min" : 4 },
-			{ "creature" : "rogue", "max" : 16, "min" : 6 },
-			{ "creature" : "nomad", "max" : 6, "min" : 3 }
+			{
+				"creature" : "nomad",
+				"min" : 4,
+				"max" : 8
+			},
+			{
+				"creature" : "rogue",
+				"min" : 6,
+				"max" : 16
+			},
+			{
+				"creature" : "nomad",
+				"min" : 3,
+				"max" : 6
+			}
 		],
-		"class" : "drifterM",
 		"images" : {
 			"large" : "romires/romires58x64.png",
 			"small" : "romires/romires48x32.png",
@@ -13,46 +25,60 @@
 			"specialtySmall" : "romires/nomad_spec32.png"
 		},
 		"skills" : [
-			{ "level" : "basic", "skill" : "tactics" },
-			{ "level" : "basic", "skill" : "resistance" },
-			{ "level" : "basic", "skill" : "logistics" }
-			
+			{
+				"skill" : "tactics",
+				"level" : "basic"
+			},
+			{
+				"skill" : "resistance",
+				"level" : "basic"
+			},
+			{
+				"skill" : "logistics",
+				"level" : "basic"
+			}
 		],
-"specialty" : {
-	"base" : { "val" : 1 },
-	"bonuses" : {
-		"ADDITIONAL_RETALIATION" : {
-			"limiters" : [
-				{
-					"parameters" : [ "nomad", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
+		"specialty" : {
+			"base" : { "val" : 1 },
+			"bonuses" : {
+				"ADDITIONAL_RETALIATION" : {
+					"type" : "ADDITIONAL_RETALIATION",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "nomad", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 3 ]
+					}
+				},
+				"gems" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.gems"
+				},
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "nomad", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 3 ]
+					}
 				}
-			],
-			"updater" : { "parameters" : [ 3 ], "type" : "GROWS_WITH_LEVEL" },
-			"type" : "ADDITIONAL_RETALIATION"
+			}
 		},
-		"gems" : {
-			"subtype" : "resource.gems",
-			"type" : "GENERATE_RESOURCE"
-		},
-		"speed" : {
-			"limiters" : [
-				{
-					"parameters" : [ "nomad", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"updater" : { "parameters" : [ 3 ], "type" : "GROWS_WITH_LEVEL" },
-			"type" : "STACKS_SPEED"
-		}
-	}
-},
 		"texts" : {
-			"biography" : "Romires is a skilled equestrian with few rivals. His skills on horseback are so renowned that his tribe follows him with unswerving loyalty, calling themselves the 'Knights of Romires'.",
 			"name" : "Romires",
+			"biography" : "Romires is a skilled equestrian with few rivals. His skills on horseback are so renowned that his tribe follows him with unswerving loyalty, calling themselves the 'Knights of Romires'.",
 			"specialty" : {
-				"description" : "{Nomads}\r\n\r\nIncreases speed of Nomads by 1 and grants them one additional attack. For that, Nomads generate one shiny gem per day.",
 				"name" : "Nomads/Gems",
+				"description" : "{Nomads}\r\n\r\nIncreases speed of Nomads by 1 and grants them one additional attack. For that, Nomads generate one shiny gem per day.",
 				"tooltip" : "Bonus: Nomads, gems"
 			}
 		}
