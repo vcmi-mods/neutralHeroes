@@ -57,10 +57,10 @@
 		},
 		"graphics" :
 		{
-			"iconSmall" : "scout/chalf63.png",
-			"iconLarge" : "scout/chalf59.png",
-			"map" : "scout/mapCHalful.def",
-			"animation" : "scout/CHalful.def",
+			"iconSmall" : "creatures/scout/chalf63.png",
+			"iconLarge" : "creatures/scout/chalf59.png",
+			"map" : "creatures/scout/mapCHalful.def",
+			"animation" : "creatures/scout/CHalful.def",
 			"timeBetweenFidgets" : 1,
 			"animationTime" :
 			{

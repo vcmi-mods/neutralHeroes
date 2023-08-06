@@ -52,7 +52,7 @@
 	],
 	"creatures" :
 	[
-		"config/nhHalfling"
+		"config/creatures/nhHalfling"
 	],
 	"spells" :
 	[
