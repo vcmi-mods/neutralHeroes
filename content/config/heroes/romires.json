@@ -1,6 +1,12 @@
 {
 	"romires" : {
-	"class" : "drifterM",
+		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/romires/portraitLarge.png",
+			"small" : "heroes/romires/portraitSmall.png",
+			"specialtyLarge" : "heroes/romires/specialtyLarge.png",
+			"specialtySmall" : "heroes/romires/specialtySmall.png"
+		},
 		"army" : [
 			{
 				"creature" : "nomad",
@@ -18,12 +24,6 @@
 				"max" : 6
 			}
 		],
-		"images" : {
-			"large" : "heroes/romires/romires58x64.png",
-			"small" : "heroes/romires/romires48x32.png",
-			"specialtyLarge" : "heroes/romires/nomad_spec44.png",
-			"specialtySmall" : "heroes/romires/nomad_spec32.png"
-		},
 		"skills" : [
 			{
 				"skill" : "tactics",

@@ -1,6 +1,12 @@
 {
 	"kharnus" : {
 		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/kharnus/portraitLarge.png",
+			"small" : "heroes/kharnus/portraitSmall.png",
+			"specialtyLarge" : "heroes/kharnus/specialtyLarge.png",
+			"specialtySmall" : "heroes/kharnus/specialtySmall.png"
+		},
 		"army" : [
 			{
 				"creature" : "boar",
@@ -18,12 +24,6 @@
 				"max" : 10
 			}
 		],
-		"images" : {
-			"large" : "heroes/kharnus/kharnus58x64.png",
-			"small" : "heroes/kharnus/kharnus48x32.png",
-			"specialtyLarge" : "heroes/kharnus/boar_spec44.png",
-			"specialtySmall" : "heroes/kharnus/boar_spec32.png"
-		},
 		"skills" : [
 			{
 				"skill" : "offence",

@@ -2,6 +2,12 @@
 	"orma" : {
 		"class" : "drifterF",
 		"female" : true,
+		"images" : {
+			"large" : "heroes/orma/portraitLarge.png",
+			"small" : "heroes/orma/portraitSmall.png",
+			"specialtyLarge" : "heroes/orma/specialtyLarge.png",
+			"specialtySmall" : "heroes/orma/specialtySmall.png"
+		},
 		"army" : [
 			{
 				"creature" : "halfling",
@@ -19,12 +25,6 @@
 				"max" : 14
 			}
 		],
-		"images" : {
-			"large" : "heroes/orma/orma58x64.png",
-			"small" : "heroes/orma/orma48x32.png",
-			"specialtyLarge" : "heroes/orma/halfling_spec44.png",
-			"specialtySmall" : "heroes/orma/halfling_spec32.png"
-		},
 		"skills" : [
 			{
 				"skill" : "archery",

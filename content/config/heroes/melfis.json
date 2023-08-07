@@ -1,6 +1,12 @@
 {
 	"melfis" : {
 		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/melfis/portraitLarge.png",
+			"small" : "heroes/melfis/portraitSmall.png",
+			"specialtyLarge" : "heroes/melfis/specialtyLarge.png",
+			"specialtySmall" : "heroes/melfis/specialtySmall.png"
+		},
 		"army" : [
 			{
 				"creature" : "rogue",
@@ -18,12 +24,6 @@
 				"max" : 6
 			}
 		],
-		"images" : {
-			"large" : "heroes/melfis/melfis58x64.png",
-			"small" : "heroes/melfis/melfis48x32.png",
-			"specialtyLarge" : "heroes/melfis/rogue_spec44.png",
-			"specialtySmall" : "heroes/melfis/rogue_spec32.png"
-		},
 		"skills" : [
 			{
 				"skill" : "luck",

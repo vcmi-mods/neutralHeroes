@@ -1,6 +1,12 @@
 {
 	"xanthus" : {
 		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/xanthus/portraitLarge.png",
+			"small" : "heroes/xanthus/portraitSmall.png",
+			"specialtyLarge" : "heroes/xanthus/specialtyLarge.png",
+			"specialtySmall" : "heroes/xanthus/specialtySmall.png"
+		},
 		"army" : [
 			{
 				"creature" : "goldGolem",
@@ -18,12 +24,6 @@
 				"max" : 6
 			}
 		],
-		"images" : {
-			"large" : "heroes/xanthus/xanthus58x64.png",
-			"small" : "heroes/xanthus/xanthus48x32.png",
-			"specialtyLarge" : "heroes/xanthus/goldGolem_spec44.png",
-			"specialtySmall" : "heroes/xanthus/goldGolem_spec32.png"
-		},
 		"skills" : [
 			{
 				"skill" : "tactics",

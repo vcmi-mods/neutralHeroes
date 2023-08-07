@@ -2,10 +2,10 @@
 	"sergiush" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "heroes/sergiush/sergiush58x64.png",
-			"small" : "heroes/sergiush/sergiush48x32.png",
-			"specialtyLarge" : "heroes/sergiush/warZealot_spec44.png",
-			"specialtySmall" : "heroes/sergiush/warZealot_spec32.png"
+			"large" : "heroes/sergiush/portraitLarge.png",
+			"small" : "heroes/sergiush/portraitSmall.png",
+			"specialtyLarge" : "heroes/sergiush/specialtyLarge.png",
+			"specialtySmall" : "heroes/sergiush/specialtySmall.png"
 		},
 		"army" : [
 			{
