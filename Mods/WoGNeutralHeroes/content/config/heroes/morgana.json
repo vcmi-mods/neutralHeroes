@@ -1,10 +1,5 @@
 {
 	"morgana" : {
-		"army" : [
-			{ "creature" : "wogSorceress", "max" : 4, "min" : 2 },
-			{ "creature" : "santaGremlin", "max" : 12, "min" : 6 },
-			{ "creature" : "enchanter", "max" : 3, "min" : 1 }
-		],
 		"class" : "drifterF",
 		"female" : true,
 		"images" : {
@@ -13,46 +8,71 @@
 			"specialtyLarge" : "morgana/sorceress_spec44.png",
 			"specialtySmall" : "morgana/sorceress_spec32.png"
 		},
-		"skills" : [
-			{ "level" : "advanced", "skill" : "resistance" },
-			{ "level" : "basic", "skill" : "luck" },
-			{ "level" : "basic", "skill" : "mysticism" }
-			
+		"army" : [
+			{
+				"creature" : "wogSorceress",
+				"min" : 2,
+				"max" : 4
+			},
+			{
+				"creature" : "santaGremlin",
+				"min" : 6,
+				"max" : 12
+			},
+			{
+				"creature" : "enchanter",
+				"min" : 1,
+				"max" : 3
+			}
 		],
-"specialty" : {
-	"bonuses" : {
-		"CHANGES_SPELL_COST_FOR_ALLY" : {
-			"limiters" : [
-				{
-					"parameters" : [ "wogSorceress", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
+		"skills" : [
+			{
+				"skill" : "resistance",
+				"level" : "advanced"
+			},
+			{
+				"skill" : "luck",
+				"level" : "basic"
+			},
+			{
+				"skill" : "mysticism",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"CHANGES_SPELL_COST_FOR_ALLY" : {
+					"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+					"val" : 3,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "wogSorceress", false ]
+						}
+					]
+				},
+				"CHANGES_SPELL_COST_FOR_ENEMY" : {
+					"type" : "CHANGES_SPELL_COST_FOR_ENEMY",
+					"subtype" : 5,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "wogSorceress", false ]
+						}
+					]
+				},
+				"MANA_REGENERATION" : {
+					"type" : "MANA_REGENERATION",
+					"val" : 5
 				}
-			],
-			"type" : "CHANGES_SPELL_COST_FOR_ALLY",
-			"val" : 3
+			}
 		},
-		"CHANGES_SPELL_COST_FOR_ENEMY" : {
-			"limiters" : [
-				{
-					"parameters" : [ "wogSorceress", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"subtype" : 5,
-			"type" : "CHANGES_SPELL_COST_FOR_ENEMY"
-		},
-		"MANA_REGENERATION" : {
-			"type" : "MANA_REGENERATION",
-			"val" : 5
-		}
-	}
-},
 		"texts" : {
-			"biography" : "Morgana is a sorceress of great power. It is said she was born within one of the world's strongest leylines, absorbing its powers and becoming in tune with it. She is said to be able to control the flow of magic in battle, easing the flow to her allies, and stemming the flow to her enemies.",
 			"name" : "Morgana",
+			"biography" : "Morgana is a sorceress of great power. It is said she was born within one of the world's strongest leylines, absorbing its powers and becoming in tune with it. She is said to be able to control the flow of magic in battle, easing the flow to her allies, and stemming the flow to her enemies.",
 			"specialty" : {
-				"description" : "{Sorceress}\r\n\r\nSorceress under Morgana's command reduce spell cost for ally by 3 and increase by 5 for enemy. Also Morgana can regenerate additional 5 mana points per day.",
 				"name" : "Sorceress/Mana regeneration",
+				"description" : "{Sorceress}\r\n\r\nSorceress under Morgana's command reduce spell cost for ally by 3 and increase by 5 for enemy. Also Morgana can regenerate additional 5 mana points per day.",
 				"tooltip" : "Sorceress, Mana regeneration"
 			}
 		}

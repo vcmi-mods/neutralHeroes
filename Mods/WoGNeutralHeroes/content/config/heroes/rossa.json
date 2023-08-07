@@ -1,10 +1,5 @@
 {
 	"rossa" : {
-		"army" : [
-			{ "creature" : "ghost", "max" : 8, "min" : 4 },
-			{ "creature" : "wight", "max" : 6, "min" : 3 },
-			{ "creature" : "wraith", "max" : 6, "min" : 3 }
-		],
 		"class" : "drifterF",
 		"female" : true,
 		"images" : {
@@ -13,48 +8,73 @@
 			"specialtyLarge" : "rossa/ghost_spec44.png",
 			"specialtySmall" : "rossa/ghost_spec32.png"
 		},
-		"skills" : [
-			{ "level" : "advanced", "skill" : "necromancy" },
-			{ "level" : "basic", "skill" : "sorcery" },
-			{ "level" : "basic", "skill" : "wisdom" }
-			
+		"army" : [
+			{
+				"creature" : "ghost",
+				"min" : 4,
+				"max" : 8
+			},
+			{
+				"creature" : "wight",
+				"min" : 3,
+				"max" : 6
+			},
+			{
+				"creature" : "wraith",
+				"min" : 3,
+				"max" : 6
+			}
 		],
-"specialty" : {
-	"bonuses" : {
-		"ENEMY_DEFENCE_REDUCTION" : {
-			"limiters" : [
-				{
-					"parameters" : [ "ghost", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
+		"skills" : [
+			{
+				"skill" : "necromancy",
+				"level" : "advanced"
+			},
+			{
+				"skill" : "sorcery",
+				"level" : "basic"
+			},
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"ENEMY_DEFENCE_REDUCTION" : {
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : 50,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "ghost", false ]
+						}
+					]
+				},
+				"MOVEMENT" : {
+					"type" : "MOVEMENT",
+					"val" : 500,
+					//"propagator" : "HERO"
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "ghost", false ]
+						}
+					]
+				},
+				"mercury" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.mercury",
+					"val" : 1
 				}
-			],
-			"type" : "ENEMY_DEFENCE_REDUCTION",
-			"val" : 50
+			}
 		},
-		"MOVEMENT" : {
-			"limiters" : [
-				{
-					"parameters" : [ "ghost", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"type" : "MOVEMENT",
-			"val" : 500
-//			"propagator" : "HERO"
-		},
-		"mercury" : {
-			"subtype" : "resource.mercury",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 1
-		}
-	}
-},
 		"texts" : {
-			"biography" : "Rossa was once one of the most beautiful queens in all the land. Even if death she is said to be hauntingly beautiful, with a beauty so enthralling the spirits of her dead troops rise and continue to follow her.",
 			"name" : "Rossa",
+			"biography" : "Rossa was once one of the most beautiful queens in all the land. Even if death she is said to be hauntingly beautiful, with a beauty so enthralling the spirits of her dead troops rise and continue to follow her.",
 			"specialty" : {
-				"description" : "{Ghosts}\r\n\r\nGhosts under Rossa's command can reduce enery defence by half. Besides Ghosts increases Rossa's movement per turn. Also Rossa generates 1 mercury per day.",
 				"name" : "Ghosts/Mercury",
+				"description" : "{Ghosts}\r\n\r\nGhosts under Rossa's command can reduce enery defence by half. Besides Ghosts increases Rossa's movement per turn. Also Rossa generates 1 mercury per day.",
 				"tooltip" : "Ghosts, mercury"
 			}
 		}

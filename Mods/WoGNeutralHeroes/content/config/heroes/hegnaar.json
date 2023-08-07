@@ -1,10 +1,5 @@
 {
 	"hegnaar" : {
-		"army" : [
-			{ "creature" : "hellSteed", "max" : 4, "min" : 2 },
-			{ "creature" : "nightmare", "max" : 2, "min" : 1 }
-
-		],
 		"class" : "drifterM",
 		"images" : {
 			"large" : "hegnaar/hegnaar58x64.png",
@@ -12,46 +7,66 @@
 			"specialtyLarge" : "hegnaar/hellSteed_spec44.png",
 			"specialtySmall" : "hegnaar/hellSteed_spec32.png"
 		},
-		"skills" : [
-			{ "level" : "basic", "skill" : "fireMagic" },
-			{ "level" : "basic", "skill" : "diplomacy" },
-			{ "level" : "basic", "skill" : "resistance" }
-			
+		"army" : [
+			{
+				"creature" : "hellSteed",
+				"min" : 2,
+				"max" : 4
+			},
+			{
+				"creature" : "nightmare",
+				"min" : 1,
+				"max" : 2
+			}
 		],
-"specialty" : {
-	"bonuses" : {
-		"STACK_HEALTH" : {
-			"limiters" : [
-				{
-					"parameters" : [ "hellSteed", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
+		"skills" : [
+			{
+				"skill" : "fireMagic",
+				"level" : "basic"
+			},
+			{
+				"skill" : "diplomacy",
+				"level" : "basic"
+			},
+			{
+				"skill" : "resistance",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"STACK_HEALTH" : {
+					"type" : "STACK_HEALTH",
+					"val" : 10,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "hellSteed", false ]
+						}
+					]
+				},
+				"TWO_HEX_ATTACK_BREATH" : {
+					"type" : "TWO_HEX_ATTACK_BREATH",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "hellSteed", false ]
+						}
+					]
+				},
+				"fireWall" : {
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"subtype" : "spell.fireWall",
+					"val" : 20
 				}
-			],
-			"type" : "STACK_HEALTH",
-			"val" : 10
+			}
 		},
-		"TWO_HEX_ATTACK_BREATH" : {
-			"limiters" : [
-				{
-					"parameters" : [ "hellSteed", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"type" : "TWO_HEX_ATTACK_BREATH"
-		},
-		"fireWall" : {
-			"subtype" : "spell.fireWall",
-			"type" : "SPECIFIC_SPELL_DAMAGE",
-			"val" : 20
-		}
-	}
-},
 		"texts" : {
-			"biography" : "So in tune with Hell Steeds is Hegnaar, it is believed he was once a Hell Steed himself in a past life. He is said to have a raging and firey spirit that is so hot and strong he must release his anger in roars of firey rage.",
 			"name" : "Hegnaar",
+			"biography" : "So in tune with Hell Steeds is Hegnaar, it is believed he was once a Hell Steed himself in a past life. He is said to have a raging and firey spirit that is so hot and strong he must release his anger in roars of firey rage.",
 			"specialty" : {
-				"description" : "{Hell Steeds}\r\n\r\nIncreases health of any Hell Steeds by 10 HP for every 6 levels. Also Hell Steeds gain 2-hex breath like dragons. Besides, Hegnaar can cast Fire Wall with increased effect by 20%.",
 				"name" : "Hell Steeds/Fire Wall",
+				"description" : "{Hell Steeds}\r\n\r\nIncreases health of any Hell Steeds by 10 HP for every 6 levels. Also Hell Steeds gain 2-hex breath like dragons. Besides, Hegnaar can cast Fire Wall with increased effect by 20%.",
 				"tooltip" : "Hell Steeds, Fire Wall"
 			}
 		}

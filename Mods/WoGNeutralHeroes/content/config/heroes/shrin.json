@@ -1,10 +1,5 @@
 {
 	"shrin" : {
-		"army" : [
-			{ "creature" : "santaGremlin", "max" : 16, "min" : 8 },
-			{ "creature" : "gremlin", "max" : 18, "min" : 9 },
-			{ "creature" : "masterGremlin", "max" : 10, "min" : 5 }
-		],
 		"class" : "drifterM",
 		"images" : {
 			"large" : "shrin/shrin58x64.png",
@@ -12,55 +7,80 @@
 			"specialtyLarge" : "shrin/santaGremlin_spec44.png",
 			"specialtySmall" : "shrin/santaGremlin_spec32.png"
 		},
-		"skills" : [
-			{ "level" : "basic", "skill" : "waterMagic" },
-			{ "level" : "basic", "skill" : "tactics" },
-			{ "level" : "basic", "skill" : "artillery" }
-			
+		"army" : [
+			{
+				"creature" : "santaGremlin",
+				"min" : 8,
+				"max" : 16
+			},
+			{
+				"creature" : "gremlin",
+				"min" : 9,
+				"max" : 18
+			},
+			{
+				"creature" : "masterGremlin",
+				"min" : 5,
+				"max" : 10
+			}
 		],
-"specialty" : {
-	"bonuses" : {
-		"ADDITIONAL_ATTACK" : {
-			"limiters" : [
-				{
-					"parameters" : [ "santaGremlin", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"updater" : {
-				"parameters" : [ 6, 2 ],
-				"type" : "GROWS_WITH_LEVEL"
+		"skills" : [
+			{
+				"skill" : "waterMagic",
+				"level" : "basic"
 			},
-			"type" : "ADDITIONAL_ATTACK",
-			"val" : 2
-		},
-		"STACK_HEALTH" : {
-			"limiters" : [
-				{
-					"parameters" : [ "santaGremlin", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"updater" : {
-				"parameters" : [ 6, 2 ],
-				"type" : "GROWS_WITH_LEVEL"
+			{
+				"skill" : "tactics",
+				"level" : "basic"
 			},
-			"type" : "STACK_HEALTH",
-			"val" : 3
+			{
+				"skill" : "artillery",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"ADDITIONAL_ATTACK" : {
+					"type" : "ADDITIONAL_ATTACK",
+					"val" : 2,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "santaGremlin", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 6, 2 ]
+					}
+				},
+				"STACK_HEALTH" : {
+					"type" : "STACK_HEALTH",
+					"val" : 3,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "santaGremlin", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 6, 2 ]
+					}
+				},
+				"gold" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.gold",
+					"val" : 500
+				}
+			}
 		},
-		"gold" : {
-			"subtype" : "resource.gold",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 500
-		}
-	}
-},
 		"texts" : {
-			"biography" : "Shrin is the creature that parents tell their children about to scare them into behaving throughout the year. He and his fellow gremlins are said to have destroyed many a kingdom with their wily antics.",
 			"name" : "Shrin",
+			"biography" : "Shrin is the creature that parents tell their children about to scare them into behaving throughout the year. He and his fellow gremlins are said to have destroyed many a kingdom with their wily antics.",
 			"specialty" : {
-				"description" : "{Santa Gremlins}\r\n\r\nIncreases Health of any Santa Gremlins by 3 HP for every 3 levels. Also Santa Gremlins gain two additional attacks. Besides, Shrin generates 500 gold per day.",
 				"name" : "Santa Gremlins/Gold",
+				"description" : "{Santa Gremlins}\r\n\r\nIncreases Health of any Santa Gremlins by 3 HP for every 3 levels. Also Santa Gremlins gain two additional attacks. Besides, Shrin generates 500 gold per day.",
 				"tooltip" : "Santa Gremlins, Gold"
 			}
 		}
