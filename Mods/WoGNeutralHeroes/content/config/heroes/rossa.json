@@ -3,10 +3,10 @@
 		"class" : "drifterF",
 		"female" : true,
 		"images" : {
-			"large" : "heroes/rossa/rossa58x64.png",
-			"small" : "heroes/rossa/rossa48x32.png",
-			"specialtyLarge" : "heroes/rossa/ghost_spec44.png",
-			"specialtySmall" : "heroes/rossa/ghost_spec32.png"
+			"large" : "heroes/rossa/portraitLarge.png",
+			"small" : "heroes/rossa/portraitSmall.png",
+			"specialtyLarge" : "heroes/rossa/specialtyLarge.png",
+			"specialtySmall" : "heroes/rossa/specialtySmall.png"
 		},
 		"army" : [
 			{

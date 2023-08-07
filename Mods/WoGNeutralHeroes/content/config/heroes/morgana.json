@@ -3,10 +3,10 @@
 		"class" : "drifterF",
 		"female" : true,
 		"images" : {
-			"large" : "heroes/morgana/morgana58x64.png",
-			"small" : "heroes/morgana/morgana48x32.png",
-			"specialtyLarge" : "heroes/morgana/sorceress_spec44.png",
-			"specialtySmall" : "heroes/morgana/sorceress_spec32.png"
+			"large" : "heroes/morgana/portraitLarge.png",
+			"small" : "heroes/morgana/portraitSmall.png",
+			"specialtyLarge" : "heroes/morgana/specialtyLarge.png",
+			"specialtySmall" : "heroes/morgana/specialtySmall.png"
 		},
 		"army" : [
 			{

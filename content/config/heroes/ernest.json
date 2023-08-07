@@ -2,10 +2,10 @@
 	"ernest" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "heroes/ernest/ernest58x64.png",
-			"small" : "heroes/ernest/ernest48x32.png",
-			"specialtyLarge" : "heroes/ernest/peasant_spec44.png",
-			"specialtySmall" : "heroes/ernest/peasant_spec32.png"
+			"large" : "heroes/ernest/portraitLarge.png",
+			"small" : "heroes/ernest/portraitSmall.png",
+			"specialtyLarge" : "heroes/ernest/specialtyLarge.png",
+			"specialtySmall" : "heroes/ernest/specialtySmall.png"
 		},
 		"army" : [
 			{

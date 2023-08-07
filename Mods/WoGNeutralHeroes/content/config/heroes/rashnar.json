@@ -2,10 +2,10 @@
 	"rashnar" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "heroes/rashnar/rashnar58x64.png",
-			"small" : "heroes/rashnar/rashnar48x32.png",
-			"specialtyLarge" : "heroes/rashnar/werewolf_spec44.png",
-			"specialtySmall" : "heroes/rashnar/werewolf_spec32.png"
+			"large" : "heroes/rashnar/portraitLarge.png",
+			"small" : "heroes/rashnar/portraitSmall.png",
+			"specialtyLarge" : "heroes/rashnar/specialtyLarge.png",
+			"specialtySmall" : "heroes/rashnar/specialtySmall.png"
 		},
 		"army" : [
 			{

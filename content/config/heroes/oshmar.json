@@ -1,6 +1,12 @@
 {
 	"oshmar" : {
 		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/oshmar/portraitLarge.png",
+			"small" : "heroes/oshmar/portraitSmall.png",
+			"specialtyLarge" : "heroes/oshmar/specialtyLarge.png",
+			"specialtySmall" : "heroes/oshmar/specialtySmall.png"
+		},
 		"army" : [
 			{
 				"creature" : "troll",
@@ -18,12 +24,6 @@
 				"max" : 12
 			}
 		],
-		"images" : {
-			"large" : "heroes/oshmar/oshmar58x64.png",
-			"small" : "heroes/oshmar/oshmar48x32.png",
-			"specialtyLarge" : "heroes/oshmar/troll_spec44.png",
-			"specialtySmall" : "heroes/oshmar/troll_spec32.png"
-		},
 		"skills" : [
 			{
 				"skill" : "firstAid",

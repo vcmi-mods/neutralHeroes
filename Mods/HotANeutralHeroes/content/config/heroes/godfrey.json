@@ -2,10 +2,10 @@
 	"godfrey" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "heroes/godfrey/godfrey58x64.png",
-			"small" : "heroes/godfrey/godfrey48x32.png",
-			"specialtyLarge" : "heroes/godfrey/godfrey_spec44.png",
-			"specialtySmall" : "heroes/godfrey/godfrey_spec32.png"
+			"large" : "heroes/godfrey/portraitLarge.png",
+			"small" : "heroes/godfrey/portraitSmall.png",
+			"specialtyLarge" : "heroes/godfrey/specialtyLarge.png",
+			"specialtySmall" : "heroes/godfrey/specialtySmall.png"
 		},
 		"army" : [
 			{

@@ -2,10 +2,10 @@
 	"oukranos" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "heroes/oukranos/oukranos58x64.png",
-			"small" : "heroes/oukranos/oukranos48x32.png",
-			"specialtyLarge" : "heroes/oukranos/fangarm_spec44.png",
-			"specialtySmall" : "heroes/oukranos/fangarm_spec32.png"
+			"large" : "heroes/oukranos/portraitLarge.png",
+			"small" : "heroes/oukranos/portraitSmall.png",
+			"specialtyLarge" : "heroes/oukranos/specialtyLarge.png",
+			"specialtySmall" : "heroes/oukranos/specialtySmall.png"
 		},
 		"army" : [
 			{

@@ -2,6 +2,12 @@
 	"zarantiri" : {
 		"class" : "drifterF",
 		"female" : true,
+		"images" : {
+			"large" : "heroes/zarantiri/portraitLarge.png",
+			"small" : "heroes/zarantiri/portraitSmall.png",
+			"specialtyLarge" : "heroes/zarantiri/specialtyLarge.png",
+			"specialtySmall" : "heroes/zarantiri/specialtySmall.png"
+		},
 		"army" : [
 			{
 				"creature" : "mummy",
@@ -19,12 +25,6 @@
 				"max" : 12
 			}
 		],
-		"images" : {
-			"large" : "heroes/zarantiri/zarantiri58x64.png",
-			"small" : "heroes/zarantiri/zarantiri48x32.png",
-			"specialtyLarge" : "heroes/zarantiri/mummy_spec44.png",
-			"specialtySmall" : "heroes/zarantiri/mummy_spec32.png"
-		},
 		"skills" : [
 			{
 				"skill" : "necromancy",
