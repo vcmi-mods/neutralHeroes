@@ -20,10 +20,10 @@
 			}
 		],
 		"images" : {
-			"large" : "zarantiri/zarantiri58x64.png",
-			"small" : "zarantiri/zarantiri48x32.png",
-			"specialtyLarge" : "zarantiri/mummy_spec44.png",
-			"specialtySmall" : "zarantiri/mummy_spec32.png"
+			"large" : "heroes/zarantiri/zarantiri58x64.png",
+			"small" : "heroes/zarantiri/zarantiri48x32.png",
+			"specialtyLarge" : "heroes/zarantiri/mummy_spec44.png",
+			"specialtySmall" : "heroes/zarantiri/mummy_spec32.png"
 		},
 		"skills" : [
 			{

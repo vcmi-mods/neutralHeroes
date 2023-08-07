@@ -19,10 +19,10 @@
 			}
 		],
 		"images" : {
-			"large" : "melfis/melfis58x64.png",
-			"small" : "melfis/melfis48x32.png",
-			"specialtyLarge" : "melfis/rogue_spec44.png",
-			"specialtySmall" : "melfis/rogue_spec32.png"
+			"large" : "heroes/melfis/melfis58x64.png",
+			"small" : "heroes/melfis/melfis48x32.png",
+			"specialtyLarge" : "heroes/melfis/rogue_spec44.png",
+			"specialtySmall" : "heroes/melfis/rogue_spec32.png"
 		},
 		"skills" : [
 			{

@@ -19,10 +19,10 @@
 			}
 		],
 		"images" : {
-			"large" : "kharnus/kharnus58x64.png",
-			"small" : "kharnus/kharnus48x32.png",
-			"specialtyLarge" : "kharnus/boar_spec44.png",
-			"specialtySmall" : "kharnus/boar_spec32.png"
+			"large" : "heroes/kharnus/kharnus58x64.png",
+			"small" : "heroes/kharnus/kharnus48x32.png",
+			"specialtyLarge" : "heroes/kharnus/boar_spec44.png",
+			"specialtySmall" : "heroes/kharnus/boar_spec32.png"
 		},
 		"skills" : [
 			{

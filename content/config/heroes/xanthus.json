@@ -19,10 +19,10 @@
 			}
 		],
 		"images" : {
-			"large" : "xanthus/xanthus58x64.png",
-			"small" : "xanthus/xanthus48x32.png",
-			"specialtyLarge" : "xanthus/goldGolem_spec44.png",
-			"specialtySmall" : "xanthus/goldGolem_spec32.png"
+			"large" : "heroes/xanthus/xanthus58x64.png",
+			"small" : "heroes/xanthus/xanthus48x32.png",
+			"specialtyLarge" : "heroes/xanthus/goldGolem_spec44.png",
+			"specialtySmall" : "heroes/xanthus/goldGolem_spec32.png"
 		},
 		"skills" : [
 			{

@@ -19,10 +19,10 @@
 			}
 		],
 		"images" : {
-			"large" : "romires/romires58x64.png",
-			"small" : "romires/romires48x32.png",
-			"specialtyLarge" : "romires/nomad_spec44.png",
-			"specialtySmall" : "romires/nomad_spec32.png"
+			"large" : "heroes/romires/romires58x64.png",
+			"small" : "heroes/romires/romires48x32.png",
+			"specialtyLarge" : "heroes/romires/nomad_spec44.png",
+			"specialtySmall" : "heroes/romires/nomad_spec32.png"
 		},
 		"skills" : [
 			{

@@ -19,10 +19,10 @@
 			}
 		],
 		"images" : {
-			"large" : "oshmar/oshmar58x64.png",
-			"small" : "oshmar/oshmar48x32.png",
-			"specialtyLarge" : "oshmar/troll_spec44.png",
-			"specialtySmall" : "oshmar/troll_spec32.png"
+			"large" : "heroes/oshmar/oshmar58x64.png",
+			"small" : "heroes/oshmar/oshmar48x32.png",
+			"specialtyLarge" : "heroes/oshmar/troll_spec44.png",
+			"specialtySmall" : "heroes/oshmar/troll_spec32.png"
 		},
 		"skills" : [
 			{
