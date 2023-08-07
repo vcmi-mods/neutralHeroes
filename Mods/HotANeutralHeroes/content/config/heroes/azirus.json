@@ -2,10 +2,10 @@
 	"azirus" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "azirus/azirus58x64.png",
-			"small" : "azirus/azirus48x32.png",
-			"specialtyLarge" : "azirus/satyr_spec44.png",
-			"specialtySmall" : "azirus/satyr_spec32.png"
+			"large" : "heroes/azirus/azirus58x64.png",
+			"small" : "heroes/azirus/azirus48x32.png",
+			"specialtyLarge" : "heroes/azirus/satyr_spec44.png",
+			"specialtySmall" : "heroes/azirus/satyr_spec32.png"
 		},
 		"army" : [
 			{

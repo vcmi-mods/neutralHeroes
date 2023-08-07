@@ -2,10 +2,10 @@
 	"amron" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "amron/amron58x64.png",
-			"small" : "amron/amron48x32.png",
-			"specialtyLarge" : "amron/amron_spec44.png",
-			"specialtySmall" : "amron/amron_spec32.png"
+			"large" : "heroes/amron/amron58x64.png",
+			"small" : "heroes/amron/amron48x32.png",
+			"specialtyLarge" : "heroes/amron/amron_spec44.png",
+			"specialtySmall" : "heroes/amron/amron_spec32.png"
 		},
 		"army" : [
 			{
