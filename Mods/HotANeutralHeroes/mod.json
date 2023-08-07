@@ -1,22 +1,22 @@
 {
+	"name" : "HotA Neutral Heroes",
+	"description" : "HotA Neutral Heroes",
+	"modType" : "Heroes",
 	"author" : "",
 	"contact" : "",
-	"description" : "HotA Neutral Heroes",
 	"licenseName" : "",
 	"licenseURL" : "",
-	"modType" : "Heroes",
-	"name" : "HotA Neutral Heroes",
-	"heroes" : [
-		"config/heroes/azirus",
-		"config/heroes/oukranos",
-		"config/heroes/godfrey",
-		"config/heroes/amron"
-	],
+	"version" : "1.2",
+	"keepDisabled" : true,
 	"depends" : [ 
 		"hota.cove",
 		"hota.neutralcreatures",
 		"hota.interference"
 	],
-	"keepDisabled" : true,		
-	"version" : "1.2"
+	"heroes" : [
+		"config/heroes/azirus",
+		"config/heroes/oukranos",
+		"config/heroes/godfrey",
+		"config/heroes/amron"
+	]
 }
