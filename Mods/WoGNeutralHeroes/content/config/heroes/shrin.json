@@ -2,10 +2,10 @@
 	"shrin" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "shrin/shrin58x64.png",
-			"small" : "shrin/shrin48x32.png",
-			"specialtyLarge" : "shrin/santaGremlin_spec44.png",
-			"specialtySmall" : "shrin/santaGremlin_spec32.png"
+			"large" : "heroes/shrin/shrin58x64.png",
+			"small" : "heroes/shrin/shrin48x32.png",
+			"specialtyLarge" : "heroes/shrin/santaGremlin_spec44.png",
+			"specialtySmall" : "heroes/shrin/santaGremlin_spec32.png"
 		},
 		"army" : [
 			{

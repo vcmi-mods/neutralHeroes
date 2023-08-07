@@ -3,10 +3,10 @@
 		"class" : "drifterF",
 		"female" : true,
 		"images" : {
-			"large" : "cyrilla/cyrilla58x64.png",
-			"small" : "cyrilla/cyrilla48x32.png",
-			"specialtyLarge" : "cyrilla/sylvanCentaur_spec44.png",
-			"specialtySmall" : "cyrilla/sylvanCentaur_spec32.png"
+			"large" : "heroes/cyrilla/cyrilla58x64.png",
+			"small" : "heroes/cyrilla/cyrilla48x32.png",
+			"specialtyLarge" : "heroes/cyrilla/sylvanCentaur_spec44.png",
+			"specialtySmall" : "heroes/cyrilla/sylvanCentaur_spec32.png"
 		},
 		"army" : [
 			{

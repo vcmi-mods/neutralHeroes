@@ -2,10 +2,10 @@
 	"hegnaar" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "hegnaar/hegnaar58x64.png",
-			"small" : "hegnaar/hegnaar48x32.png",
-			"specialtyLarge" : "hegnaar/hellSteed_spec44.png",
-			"specialtySmall" : "hegnaar/hellSteed_spec32.png"
+			"large" : "heroes/hegnaar/hegnaar58x64.png",
+			"small" : "heroes/hegnaar/hegnaar48x32.png",
+			"specialtyLarge" : "heroes/hegnaar/hellSteed_spec44.png",
+			"specialtySmall" : "heroes/hegnaar/hellSteed_spec32.png"
 		},
 		"army" : [
 			{

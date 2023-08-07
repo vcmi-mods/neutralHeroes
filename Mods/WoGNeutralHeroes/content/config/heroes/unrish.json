@@ -3,10 +3,10 @@
 		"class" : "drifterM",
 		"female" : true,
 		"images" : {
-			"large" : "unrish/unrish58x64.png",
-			"small" : "unrish/unrish48x32.png",
-			"specialtyLarge" : "unrish/messenger_spec44.png",
-			"specialtySmall" : "unrish/messenger_spec32.png"
+			"large" : "heroes/unrish/unrish58x64.png",
+			"small" : "heroes/unrish/unrish48x32.png",
+			"specialtyLarge" : "heroes/unrish/messenger_spec44.png",
+			"specialtySmall" : "heroes/unrish/messenger_spec32.png"
 		},
 		"army" : [
 			{

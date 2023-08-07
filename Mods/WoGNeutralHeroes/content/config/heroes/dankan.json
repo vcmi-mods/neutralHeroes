@@ -2,10 +2,10 @@
 	"dankan" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "dankan/dankan58x64.png",
-			"small" : "dankan/dankan48x32.png",
-			"specialtyLarge" : "dankan/nightmare_spec44.png",
-			"specialtySmall" : "dankan/nightmare_spec32.png"
+			"large" : "heroes/dankan/dankan58x64.png",
+			"small" : "heroes/dankan/dankan48x32.png",
+			"specialtyLarge" : "heroes/dankan/nightmare_spec44.png",
+			"specialtySmall" : "heroes/dankan/nightmare_spec32.png"
 		},
 		"army" : [
 			{

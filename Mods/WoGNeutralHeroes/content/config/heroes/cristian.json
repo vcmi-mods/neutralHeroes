@@ -2,10 +2,10 @@
 	"cristian" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "cristian/cristian58x64.png",
-			"small" : "cristian/cristian48x32.png",
-			"specialtyLarge" : "cristian/arcticSharpshooter_spec44.png",
-			"specialtySmall" : "cristian/arcticSharpshooter_spec32.png"
+			"large" : "heroes/cristian/cristian58x64.png",
+			"small" : "heroes/cristian/cristian48x32.png",
+			"specialtyLarge" : "heroes/cristian/arcticSharpshooter_spec44.png",
+			"specialtySmall" : "heroes/cristian/arcticSharpshooter_spec32.png"
 		},
 		"army" : [
 			{

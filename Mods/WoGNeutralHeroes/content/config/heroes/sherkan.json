@@ -2,10 +2,10 @@
 	"sherkan" : {
 		"class" : "drifterM",
 		"images" : {
-			"large" : "sherkan/sherkan58x64.png",
-			"small" : "sherkan/sherkan48x32.png",
-			"specialtyLarge" : "sherkan/gorynych_spec44.png",
-			"specialtySmall" : "sherkan/gorynych_spec32.png"
+			"large" : "heroes/sherkan/sherkan58x64.png",
+			"small" : "heroes/sherkan/sherkan48x32.png",
+			"specialtyLarge" : "heroes/sherkan/gorynych_spec44.png",
+			"specialtySmall" : "heroes/sherkan/gorynych_spec32.png"
 		},
 		"army" : [
 			{
