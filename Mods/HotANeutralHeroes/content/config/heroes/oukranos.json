@@ -40,8 +40,8 @@
 		],
 		"specialty" : {
 			"bonuses" : {
-				"type" : "BLOCKS_RETALIATION",
 				"BLOCKS_RETALIATION" : {
+					"type" : "BLOCKS_RETALIATION",
 					"limiters" : [
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
