@@ -1,16 +1,12 @@
 {
-	"version" : "1.09",
-	"author" : "avatar, Nephretes, Witchking, draeganfire, MK. Portraits are taken from various sources from the net.",
-	"contact" : "http://www.vault.acidcave.net/download.php?id=553",
+	"name" : "Neutral Heroes",
 	"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
 	"modType" : "Heroes",
-	"name" : "Neutral Heroes",
-	"compatibility" :
-	{
-		"min" : "1.3.0"
-	},
+	"author" : "avatar, Nephretes, Witchking, draeganfire, MK. Portraits are taken from various sources from the net.",
+	"contact" : "http://www.vault.acidcave.net/download.php?id=553",
+	"version" : "1.09",
 	"changelog" :
-    {
+	{
 		"1.0"   : ["Initial release"],
 		"1.01"  : ["fixes"],
 		"1.02"   : ["Add female hero sprites"],
@@ -21,7 +17,11 @@
 		"1.07"   : ["fix for wog Sorceresses"],
 		"1.08"   : ["Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"],
 		"1.09"   : ["One more fix for wog Sorceresses"]
-    },
+	},
+	"compatibility" :
+	{
+		"min" : "1.3.0"
+	},
 	"german" : {
 		"name" : "Neutrale Helden",
 		"description" : "Mod erstellt neutrale Heldenklasse namens Drifter. Drifter können in Tavers angeheuert werden, können aber nicht als Starthelden gewählt werden.",
@@ -31,14 +31,15 @@
 	},
 	"chinese" : {
 		"name" : "中立英雄",
+		"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
 		"translations" : [
 			"translation/neutral-heroes/chinese.json"
 		]
 	},
-	"heroClasses" : 
-	[ 
-		"config/drifterMale",
-		"config/drifterFemale"
+	"heroClasses" :
+	[
+		"config/heroClasses/drifterMale",
+		"config/heroClasses/drifterFemale"
 	],
 	"heroes" : [
 		"config/heroes/kharnus",
@@ -52,7 +53,7 @@
 	],
 	"creatures" :
 	[
-		"config/nhHalfling"
+		"config/creatures/nhHalfling"
 	],
 	"spells" :
 	[

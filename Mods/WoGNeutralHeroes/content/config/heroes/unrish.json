@@ -1,0 +1,116 @@
+{
+	"unrish" : {
+		"class" : "drifterM",
+		"female" : true,
+		"images" : {
+			"large" : "heroes/unrish/unrish58x64.png",
+			"small" : "heroes/unrish/unrish48x32.png",
+			"specialtyLarge" : "heroes/unrish/messenger_spec44.png",
+			"specialtySmall" : "heroes/unrish/messenger_spec32.png"
+		},
+		"army" : [
+			{
+				"creature" : "airMessenger",
+				"min" : 4,
+				"max" : 12
+			},
+			{
+				"creature" : "waterMessenger",
+				"min" : 6,
+				"max" : 10
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "intelligence",
+				"level" : "basic"
+			},
+			{
+				"skill" : "sorcery",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"gems" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.gems",
+					"val" : 1
+				},
+				"fireMessenger2airMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.fireMessenger",
+					"addInfo" : "creature.airMessenger"
+				},
+				"fireMessenger2earthMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.fireMessenger",
+					"addInfo" : "creature.earthMessenger"
+				},
+				"fireMessenger2waterMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.fireMessenger",
+					"addInfo" : "creature.waterMessenger"
+				},
+				"airMessenger2fireMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.airMessenger",
+					"addInfo" : "creature.fireMessenger"
+				},
+				"airMessenger2earthMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.airMessenger",
+					"addInfo" : "creature.earthMessenger"
+				},
+				"airMessenger2waterMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.airMessenger",
+					"addInfo" : "creature.waterMessenger"
+				},
+				"earthMessenger2fireMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.earthMessenger",
+					"addInfo" : "creature.fireMessenger"
+				},
+				"earthMessenger2airMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.earthMessenger",
+					"addInfo" : "creature.airMessenger"
+				},
+				"earthMessenger2waterMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.earthMessenger",
+					"addInfo" : "creature.waterMessenger"
+				},
+				"waterMessenger2fireMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.waterMessenger",
+					"addInfo" : "creature.fireMessenger"
+				},
+				"waterMessenger2airMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.waterMessenger",
+					"addInfo" : "creature.airMessenger"
+				},
+				"waterMessenger2earthMessenger" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.waterMessenger",
+					"addInfo" : "creature.earthMessenger"
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Unrish",
+			"biography" : "Unrish is known as the 'Harbinger of Doom'. It is known throughout the land that when Unrish is sent to deliver a message, that message is usually followed by the destruction of his intended recipients.",
+			"specialty" : {
+				"name" : "Messengers/Gems",
+				"description" : "{Messengers}\r\n\r\nUnrish can upgrade any Messengers into another. Also generates 1 gem per day.",
+				"tooltip" : "Messengers, Gems"
+			}
+		}
+	}
+}

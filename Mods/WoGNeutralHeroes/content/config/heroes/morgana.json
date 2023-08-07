@@ -1,0 +1,80 @@
+{
+	"morgana" : {
+		"class" : "drifterF",
+		"female" : true,
+		"images" : {
+			"large" : "heroes/morgana/morgana58x64.png",
+			"small" : "heroes/morgana/morgana48x32.png",
+			"specialtyLarge" : "heroes/morgana/sorceress_spec44.png",
+			"specialtySmall" : "heroes/morgana/sorceress_spec32.png"
+		},
+		"army" : [
+			{
+				"creature" : "wogSorceress",
+				"min" : 2,
+				"max" : 4
+			},
+			{
+				"creature" : "santaGremlin",
+				"min" : 6,
+				"max" : 12
+			},
+			{
+				"creature" : "enchanter",
+				"min" : 1,
+				"max" : 3
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "resistance",
+				"level" : "advanced"
+			},
+			{
+				"skill" : "luck",
+				"level" : "basic"
+			},
+			{
+				"skill" : "mysticism",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"CHANGES_SPELL_COST_FOR_ALLY" : {
+					"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+					"val" : 3,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "wogSorceress", false ]
+						}
+					]
+				},
+				"CHANGES_SPELL_COST_FOR_ENEMY" : {
+					"type" : "CHANGES_SPELL_COST_FOR_ENEMY",
+					"subtype" : 5,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "wogSorceress", false ]
+						}
+					]
+				},
+				"MANA_REGENERATION" : {
+					"type" : "MANA_REGENERATION",
+					"val" : 5
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Morgana",
+			"biography" : "Morgana is a sorceress of great power. It is said she was born within one of the world's strongest leylines, absorbing its powers and becoming in tune with it. She is said to be able to control the flow of magic in battle, easing the flow to her allies, and stemming the flow to her enemies.",
+			"specialty" : {
+				"name" : "Sorceress/Mana regeneration",
+				"description" : "{Sorceress}\r\n\r\nSorceress under Morgana's command reduce spell cost for ally by 3 and increase by 5 for enemy. Also Morgana can regenerate additional 5 mana points per day.",
+				"tooltip" : "Sorceress, Mana regeneration"
+			}
+		}
+	}
+}

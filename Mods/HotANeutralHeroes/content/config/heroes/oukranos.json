@@ -1,0 +1,83 @@
+{
+	"oukranos" : {
+		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/oukranos/oukranos58x64.png",
+			"small" : "heroes/oukranos/oukranos48x32.png",
+			"specialtyLarge" : "heroes/oukranos/fangarm_spec44.png",
+			"specialtySmall" : "heroes/oukranos/fangarm_spec32.png"
+		},
+		"army" : [
+			{
+				"creature" : "fangarm",
+				"min" : 2,
+				"max" : 4
+			},
+			{
+				"creature" : "oceanid",
+				"min" : 8,
+				"max" : 16
+			},
+			{
+				"creature" : "nymph",
+				"min" : 7,
+				"max" : 14
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "scholar",
+				"level" : "advanced"
+			},
+			{
+				"skill" : "pathfinding",
+				"level" : "basic"
+			},
+			{
+				"skill" : "waterMagic",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"BLOCKS_RETALIATION" : {
+					"type" : "BLOCKS_RETALIATION",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "fangarm", false ]
+						}
+					]
+				},
+				"hypnotize" : {
+					"type" : "SPECIAL_FIXED_VALUE_ENCHANT",
+					"subtype" : "spell.hypnotize",
+					"addInfo" : 3
+				},
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"addInfo" : 5,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "fangarm", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 10, 4 ]
+					}
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Oukranos",
+			"biography" : "Oukranos is a mezmerizing leader, who commands unwavering loyalty from his Fangarm troops. Though some say he enslaves the will of his Fangarms, they will insist they follow him of their own free will.",
+			"specialty" : {
+				"name" : "Fangarms/Hipnotize",
+				"description" : "{Fangarms}\r\n\r\nIncreases Speed of any Fangarms by 5% for every 5 levels. All Fangarms under Oukranos command gain Block Retaliation ablity. Besides Oukranos can cast Hypnotize spell always with expert level.",
+				"tooltip" : "Bonus: Fangarms, Hipnotize"
+			}
+		}
+	}
+}

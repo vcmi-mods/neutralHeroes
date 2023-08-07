@@ -1,0 +1,81 @@
+{
+	"cyrilla" : {
+		"class" : "drifterF",
+		"female" : true,
+		"images" : {
+			"large" : "heroes/cyrilla/cyrilla58x64.png",
+			"small" : "heroes/cyrilla/cyrilla48x32.png",
+			"specialtyLarge" : "heroes/cyrilla/sylvanCentaur_spec44.png",
+			"specialtySmall" : "heroes/cyrilla/sylvanCentaur_spec32.png"
+		},
+		"army" : [
+			{
+				"creature" : "sylvanCentaur",
+				"min" : 3,
+				"max" : 6
+			},
+			{
+				"creature" : "centaur",
+				"min" : 5,
+				"max" : 10
+			},
+			{
+				"creature" : "woodElf",
+				"min" : 4,
+				"max" : 8
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "archery",
+				"level" : "basic"
+			},
+			{
+				"skill" : "scholar",
+				"level" : "basic"
+			},
+			{
+				"skill" : "eagleEye",
+				"level" : "advanced"
+			}
+			
+		],
+		"specialty" : {
+			"bonuses" : {
+				"BLOCKS_RETALIATION" : {
+					"type" : "BLOCKS_RETALIATION",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "sylvanCentaur", false ]
+						}
+					]
+				},
+				"MANA_CHANNELING" : {
+					"type" : "MANA_CHANNELING",
+					"val" : 20,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "sylvanCentaur", false ]
+						}
+					]
+				},
+				"lightningBolt" : {
+					"type" : "SPECIAL_FIXED_VALUE_ENCHANT",
+					"subtype" : "spell.lightningBolt",
+					"addInfo" : 3
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Cyrilla",
+			"biography" : "Priestess of the Sylvan Centaurs, Cyrilla is said to be able to draw from the magical strength of her enemies to strenghten her own troops, using her enemies magical prowess against them.",
+			"specialty" : {
+				"name" : "Sylvan Centaurs/Lightning Bolt",
+				"description" : "{Sylvan Centaurs}\r\n\r\nAll Sylvan Centaurs gain Block Retaliation ability and can channel 20% of enemy mana. Besides Cyrilla can cast Lightning Bolt always at expert effect.",
+				"tooltip" : "Sylvan Centaurs, Lightning Bolt"
+			}
+		}
+	}
+}

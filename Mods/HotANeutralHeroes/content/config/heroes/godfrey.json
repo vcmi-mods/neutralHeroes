@@ -1,0 +1,75 @@
+{
+	"godfrey" : {
+		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/godfrey/godfrey58x64.png",
+			"small" : "heroes/godfrey/godfrey48x32.png",
+			"specialtyLarge" : "heroes/godfrey/godfrey_spec44.png",
+			"specialtySmall" : "heroes/godfrey/godfrey_spec32.png"
+		},
+		"army" : [
+			{
+				"creature" : "leprechaun",
+				"min" : 6,
+				"max" : 10
+			},
+			{
+				"creature" : "leprechaun",
+				"min" : 6,
+				"max" : 10
+			},
+			{
+				"creature" : "satyr",
+				"min" : 1,
+				"max" : 3
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "estates",
+				"level" : "advanced"
+			},
+			{
+				"skill" : "luck",
+				"level" : "basic"
+			},
+			{
+				"skill" : "pathfinding",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"rebirth" : {
+					"type" : "REBIRTH",
+					"subtype" : 0,
+					"val" : 100,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "leprechaun", false ]
+						}
+					]
+				},
+				"crystals" : {
+					"type" : "SPECIAL_CRYSTAL_GENERATION",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "leprechaun", false ]
+						}
+					]
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Godfrey",
+			"biography" : "Fortune has always been associated with the Leprekauns since birth. Every few years a Leprekaun is born blessed with exceptional happiness. Godfrey himself does not fully know why his kin in his presence can be reborn from the ashes like Phoenixes. He explains it with... a Fortune!",
+			"specialty" : {
+				"name" : "Leprechaun/Crystals",
+				"description" : "{Leprechaun}\r\n\r\nAll Leprechauns under Godfrey command can rise from ashes like Phoenixes do. In addition, Leprechauns gain crystal generation ability.",
+				"tooltip" : "Leprechaun, crystal generation"
+			}
+		}
+	}
+}

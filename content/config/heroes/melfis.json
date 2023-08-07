@@ -1,53 +1,97 @@
 {
 	"melfis" : {
-		"army" : [
-			{ "creature" : "rogue", "max" : 12, "min" : 6 },
-			{ "creature" : "rogue", "max" : 12, "min" : 6 },
-			{ "creature" : "nomad", "max" : 6, "min" : 4 }
-		],
 		"class" : "drifterM",
+		"army" : [
+			{
+				"creature" : "rogue",
+				"min" : 6,
+				"max" : 12
+			},
+			{
+				"creature" : "rogue",
+				"min" : 6,
+				"max" : 12
+			},
+			{
+				"creature" : "nomad",
+				"min" : 4,
+				"max" : 6
+			}
+		],
 		"images" : {
-			"large" : "melfis/melfis58x64.png",
-			"small" : "melfis/melfis48x32.png",
-			"specialtyLarge" : "melfis/rogue_spec44.png",
-			"specialtySmall" : "melfis/rogue_spec32.png"
+			"large" : "heroes/melfis/melfis58x64.png",
+			"small" : "heroes/melfis/melfis48x32.png",
+			"specialtyLarge" : "heroes/melfis/rogue_spec44.png",
+			"specialtySmall" : "heroes/melfis/rogue_spec32.png"
 		},
 		"skills" : [
-			{ "level" : "basic", "skill" : "luck" },
-			{ "level" : "basic", "skill" : "tactics" }
-			
+			{
+				"skill" : "luck",
+				"level" : "basic"
+			},
+			{
+				"skill" : "tactics",
+				"level" : "basic"
+			}
 		],
-		
-"specialty" : {
-	"bonuses" : {
-		"hate" : {
-			"subtype" : "creature.gog",
-			"type" : "HATE",
-			"val" : 50
+		"specialty" : {
+			"bonuses" : {
+				"attack" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primSkill.attack",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "rogue", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 6, 2 ]
+					}
+				},
+				"defence" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primSkill.defence",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "rogue", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 6, 2 ]
+					}
+				},
+				"hate" : {
+					"type" : "HATE",
+					"subtype" : "creature.gog",
+					"val" : 50
+				},
+				"hate2" : {
+					"type" : "HATE",
+					"subtype" : "creature.magog",
+					"val" : 50
+				},
+				"crystal" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.crystal",
+					"val" : 1
+				},
+				"gems" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.gems",
+					"val" : 1
+				}
+			}
 		},
-		"hate2" : {
-			"subtype" : "creature.magog",
-			"type" : "HATE",
-			"val" : 50
-		},
-		"crystal" : {
-			"subtype" : "resource.crystal",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 1
-		},
-		"gems" : {
-			"subtype" : "resource.gems",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 1
-		}
-	}
-},
 		"texts" : {
-			"biography" : "Melfis was taken into the Thieves' Guild when his family was killed by a Magog attack of their village. As such he trained hard in the guild, becoming one of the most skilled of rogues, and rising through the chain of command, always keeping in mind his hatred of the Gog and Magog kind, always knowing he would one day hunt down and destroy the tribe that slaughtered his family.",
 			"name" : "Melfis",
+			"biography" : "Melfis was taken into the Thieves' Guild when his family was killed by a Magog attack of their village. As such he trained hard in the guild, becoming one of the most skilled of rogues, and rising through the chain of command, always keeping in mind his hatred of the Gog and Magog kind, always knowing he would one day hunt down and destroy the tribe that slaughtered his family.",
 			"specialty" : {
-				"description" : "{Rogues}\r\n\r\nIncreases Attack and Defence of any Rogues by 5% for every 2 levels. Also all creatures under Melfis command hate Gogs and Magogs. Generates daily one gem and crystal.",
 				"name" : "Rogues/Gold",
+				"description" : "{Rogues}\r\n\r\nIncreases Attack and Defence of any Rogues by 5% for every 2 levels. Also all creatures under Melfis command hate Gogs and Magogs. Generates daily one gem and crystal.",
 				"tooltip" : "Bonus: Rogues, gold"
 			}
 		}

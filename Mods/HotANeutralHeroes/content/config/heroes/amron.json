@@ -1,0 +1,77 @@
+{
+	"amron" : {
+		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/amron/amron58x64.png",
+			"small" : "heroes/amron/amron48x32.png",
+			"specialtyLarge" : "heroes/amron/amron_spec44.png",
+			"specialtySmall" : "heroes/amron/amron_spec32.png"
+		},
+		"army" : [
+			{
+				"creature" : "steelGolem",
+				"min" : 2,
+				"max" : 3
+			},
+			{
+				"creature" : "steelGolem",
+				"min" : 2,
+				"max" : 3
+			},
+			{
+				"creature" : "steelGolem",
+				"min" : 2,
+				"max" : 3
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "interference",
+				"level" : "basic"
+			},
+			{
+				"skill" : "armorer",
+				"level" : "basic"
+			},
+			{
+				"skill" : "diplomacy",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"ironGolemtoSteelGolem" : {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.ironGolem",
+					"addInfo" : "creature.steelGolem"
+				},
+				"magicResistance" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : -1,
+					"val" : 100,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "steelGolem", false ]
+						}
+					]
+				},
+				"ore" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.ore",
+					"val" : 2
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Amron",
+			"biography" : "Usually, Steel Golems live alone in experimental shops. Amron often visits these places, if only to oil them. This makes Steel Golems under his command are even more dangerous.",
+			"specialty" : {
+				"name" : "Steel Golems/Ore",
+				"description" : "{Steel Golems}\r\n\r\nCan upgrade Iron Golems into Steel Golems. All Stell Golems in Amron army, have 100% spell damage reduction. Besides, Amron generates daily 2 ore.",
+				"tooltip" : "Bonus: Steel Golems, ore"
+			}
+		}
+	}
+}

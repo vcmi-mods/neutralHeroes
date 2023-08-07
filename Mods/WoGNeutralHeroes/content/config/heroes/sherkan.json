@@ -1,0 +1,65 @@
+{
+	"sherkan" : {
+		"class" : "drifterM",
+		"images" : {
+			"large" : "heroes/sherkan/sherkan58x64.png",
+			"small" : "heroes/sherkan/sherkan48x32.png",
+			"specialtyLarge" : "heroes/sherkan/gorynych_spec44.png",
+			"specialtySmall" : "heroes/sherkan/gorynych_spec32.png"
+		},
+		"army" : [
+			{
+				"creature" : "gorynych",
+				"min" : 1,
+				"max" : 2
+			},
+			{
+				"creature" : "fireDragonFly",
+				"min" : 4,
+				"max" : 6
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "earthMagic",
+				"level" : "basic"
+			},
+			{
+				"skill" : "scholar",
+				"level" : "basic"
+			},
+			{
+				"skill" : "scouting",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"ACID_BREATH" : {
+					"type" : "ACID_BREATH",
+					"val" : 10,
+					"addInfo" : 30,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "gorynych", false ]
+						}
+					]
+				},
+				"DARKNESS" : {
+					"type" : "DARKNESS",
+					"val" : 4
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Sherkan",
+			"biography" : "Known by most as the 'Living Darkness', Sherkan is one of the most feared Gorynyches to ever walk the lands. Wherever Sherkan is, Darkness is known to follow.",
+			"specialty" : {
+				"name" : "Gorynyches/Darkness",
+				"description" : "{Gorynyches}\r\n\r\nAll Gorynyches under Sherkan command have 30% chance for Acid Breath with 10 HP damage per creature after attack. Also Sherkan has mobile Veil of Darkness.",
+				"tooltip" : "Gorynyches, Darkness"
+			}
+		}
+	}
+}

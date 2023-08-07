@@ -1,0 +1,98 @@
+{
+	"nhHalfling":
+	{
+		"special" : true,
+		"name" :
+		{
+			"singular" : "Scout",
+			"plural" : "Scouts"
+		},
+		"faction" : "neutral",
+		"level" : 0,
+		"speed" : 5,
+		"hitPoints" : 60,
+		"shots" : 24,
+		"attack" : 5,
+		"defense" : 5,
+		"damage" :
+		{
+			"min" : 5,
+			"max" : 15
+		},
+		"fightValue" : 916,
+		"aiValue" : 1021,
+		"growth" : 1,
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.misfortune",
+				"val" : 3
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			}
+		},
+		"graphics" :
+		{
+			"iconSmall" : "creatures/scout/chalf63.png",
+			"iconLarge" : "creatures/scout/chalf59.png",
+			"map" : "creatures/scout/mapCHalful.def",
+			"animation" : "creatures/scout/CHalful.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "PHALF.DEF",
+				"attackClimaxFrame" : 6,
+				"offset" :
+				{
+					"lowerX" : 62,
+					"lowerY" : -93,
+					"middleX" : 62,
+					"middleY" : -93,
+					"upperX" : 62,
+					"upperY" : -93
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+
+			}
+		},
+		"sound" :
+		{
+			"attack": "HALFATTK.wav",
+			"defend": "HALFDFND.wav",
+			"killed": "HALFKILL.wav",
+			"move": "HALFMOVE.wav",
+			"shoot": "HALFSHOT.wav",
+			"wince": "HALFWNCE.wav"
+		}
+	}
+}
