@@ -1,10 +1,5 @@
 {
 	"oukranos" : {
-		"army" : [
-			{ "creature" : "fangarm", "max" : 4, "min" : 2 },
-			{ "creature" : "oceanid", "max" : 16, "min" : 8 },
-			{ "creature" : "nymph", "max" : 14, "min" : 7 }
-		],
 		"class" : "drifterM",
 		"images" : {
 			"large" : "oukranos/oukranos58x64.png",
@@ -12,49 +7,75 @@
 			"specialtyLarge" : "oukranos/fangarm_spec44.png",
 			"specialtySmall" : "oukranos/fangarm_spec32.png"
 		},
-		"skills" : [
-			{ "level" : "advanced", "skill" : "scholar" },
-			{ "level" : "basic", "skill" : "pathfinding" },
-			{ "level" : "basic", "skill" : "waterMagic" }
-		],
-"specialty" : {
-	"bonuses" : {
-		"BLOCKS_RETALIATION" : {
-			"limiters" : [
-				{
-					"parameters" : [ "fangarm", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"type" : "BLOCKS_RETALIATION"
-		},
-		"hypnotize" : {
-			"addInfo" : 3,
-			"subtype" : "spell.hypnotize",
-			"type" : "SPECIAL_FIXED_VALUE_ENCHANT"
-		},
-		"speed" : {
-			"addInfo" : 5,
-			"limiters" : [
-				{
-					"parameters" : [ "fangarm", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
-				}
-			],
-			"updater" : {
-				"parameters" : [ 10, 4 ],
-				"type" : "GROWS_WITH_LEVEL"
+		"army" : [
+			{
+				"creature" : "fangarm",
+				"min" : 2,
+				"max" : 4
 			},
-			"type" : "STACKS_SPEED"
-		}
-	}
-},
+			{
+				"creature" : "oceanid",
+				"min" : 8,
+				"max" : 16
+			},
+			{
+				"creature" : "nymph",
+				"min" : 7,
+				"max" : 14
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "scholar",
+				"level" : "advanced"
+			},
+			{
+				"skill" : "pathfinding",
+				"level" : "basic"
+			},
+			{
+				"skill" : "waterMagic",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"type" : "BLOCKS_RETALIATION",
+				"BLOCKS_RETALIATION" : {
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "fangarm", false ]
+						}
+					]
+				},
+				"hypnotize" : {
+					"type" : "SPECIAL_FIXED_VALUE_ENCHANT",
+					"subtype" : "spell.hypnotize",
+					"addInfo" : 3
+				},
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"addInfo" : 5,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "fangarm", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 10, 4 ]
+					}
+				}
+			}
+		},
 		"texts" : {
-			"biography" : "Oukranos is a mezmerizing leader, who commands unwavering loyalty from his Fangarm troops. Though some say he enslaves the will of his Fangarms, they will insist they follow him of their own free will.",
 			"name" : "Oukranos",
+			"biography" : "Oukranos is a mezmerizing leader, who commands unwavering loyalty from his Fangarm troops. Though some say he enslaves the will of his Fangarms, they will insist they follow him of their own free will.",
 			"specialty" : {
-				"description" : "{Fangarms}\r\n\r\nIncreases Speed of any Fangarms by 5% for every 5 levels. All Fangarms under Oukranos command gain Block Retaliation ablity. Besides Oukranos can cast Hypnotize spell always with expert level.",
 				"name" : "Fangarms/Hipnotize",
+				"description" : "{Fangarms}\r\n\r\nIncreases Speed of any Fangarms by 5% for every 5 levels. All Fangarms under Oukranos command gain Block Retaliation ablity. Besides Oukranos can cast Hypnotize spell always with expert level.",
 				"tooltip" : "Bonus: Fangarms, Hipnotize"
 			}
 		}
