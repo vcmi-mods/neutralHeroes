@@ -1,48 +1,68 @@
 {
 	"oshmar" : {
-		"army" : [
-			{ "creature" : "troll", "max" : 4, "min" : 2 },
-			{ "creature" : "gnoll", "max" : 16, "min" : 8 },
-			{ "creature" : "gnoll", "max" : 12, "min" : 6 }
-		],
 		"class" : "drifterM",
 		"images" : {
-			"large" : "oshmar/oshmar58x64.png",
-			"small" : "oshmar/oshmar48x32.png",
-			"specialtyLarge" : "oshmar/troll_spec44.png",
-			"specialtySmall" : "oshmar/troll_spec32.png"
+			"large" : "heroes/oshmar/portraitLarge.png",
+			"small" : "heroes/oshmar/portraitSmall.png",
+			"specialtyLarge" : "heroes/oshmar/specialtyLarge.png",
+			"specialtySmall" : "heroes/oshmar/specialtySmall.png"
 		},
-		"skills" : [
-			{ "level" : "basic", "skill" : "firstAid" },
-			{ "level" : "advanced", "skill" : "mysticism" }
-			
+		"army" : [
+			{
+				"creature" : "troll",
+				"min" : 2,
+				"max" : 4
+			},
+			{
+				"creature" : "gnoll",
+				"min" : 8,
+				"max" : 16
+			},
+			{
+				"creature" : "gnoll",
+				"min" : 6,
+				"max" : 12
+			}
 		],
-"specialty" : {
-	"bonuses" : {
-		"CREATURE_DAMAGE" : {
-			"limiters" : [
-				{
-					"parameters" : [ "troll", false ],
-					"type" : "CREATURE_TYPE_LIMITER"
+		"skills" : [
+			{
+				"skill" : "firstAid",
+				"level" : "basic"
+			},
+			{
+				"skill" : "mysticism",
+				"level" : "advanced"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"CREATURE_DAMAGE" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : 2,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [ "troll", false ]
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 3 ]
+					}
+				},
+				"cure" : {
+					"type" : "SPECIAL_PECULIAR_ENCHANT",
+					"subtype" : "spell.cure",
+					"addInfo" : 0
 				}
-			],
-			"updater" : { "parameters" : [ 3 ], "type" : "GROWS_WITH_LEVEL" },
-			"subtype" : 2,
-			"type" : "CREATURE_DAMAGE"
+			}
 		},
-		"cure" : {
-			"addInfo" : 0,
-			"subtype" : "spell.cure",
-			"type" : "SPECIAL_PECULIAR_ENCHANT"
-		}
-	}
-},
 		"texts" : {
-			"biography" : "Oshmar is one of the strongest, most powerful trolls in the land, and an inspiration to his fellow kin. Most other races would also agree he is one of the ugliest trolls, a fact he takes with great pride.",
 			"name" : "Oshmar",
+			"biography" : "Oshmar is one of the strongest, most powerful trolls in the land, and an inspiration to his fellow kin. Most other races would also agree he is one of the ugliest trolls, a fact he takes with great pride.",
 			"specialty" : {
-				"description" : "{Trolls}\r\n\r\nIncreases maximum damage of any Trolls by 5% for every 5 levels. Beside hero can cast Cure with increased effect.",
 				"name" : "Trolls/Cure",
+				"description" : "{Trolls}\r\n\r\nIncreases maximum damage of any Trolls by 5% for every 5 levels. Beside hero can cast Cure with increased effect.",
 				"tooltip" : "Bonus: Trolls, cure"
 			}
 		}

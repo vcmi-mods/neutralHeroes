@@ -62,5 +62,7 @@
 	"hero.neutral-heroes.zarantiri.specialty.name" : "木乃伊/恶咒附身",
 	"hero.neutral-heroes.zarantiri.specialty.tooltip" : "Bonus: Mummies, Curse",
 	"heroClass.neutral-heroes.drifterF.name" : "浪人",
-	"heroClass.neutral-heroes.drifterM.name" : "浪人"
+	"heroClass.neutral-heroes.drifterM.name" : "浪人",
+	"spell.neutral-heroes.summonStoneGolem.name" : "Summon Stone Golems",
+	"spell.neutral-heroes.summonIronGolem.name" : "Summon Iron Golems"
 }
