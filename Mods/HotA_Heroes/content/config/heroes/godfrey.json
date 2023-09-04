@@ -1,0 +1,55 @@
+{
+	"godfrey" : {
+		"army" : [
+			{ "creature" : "leprechaun", "max" : 10, "min" : 6 },
+			{ "creature" : "leprechaun", "max" : 10, "min" : 6 },
+			{ "creature" : "satyr", "max" : 3, "min" : 1 }
+		],
+		"class" : "drifterM",
+		"images" : {
+			"large" : "godfrey/godfrey58x64.png",
+			"small" : "godfrey/godfrey48x32.png",
+			"specialtyLarge" : "godfrey/godfrey_spec44.png",
+			"specialtySmall" : "godfrey/godfrey_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "estates" },
+			{ "level" : "basic", "skill" : "luck" },
+			{ "level" : "basic", "skill" : "pathfinding" }
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"rebirth" : {
+					"limiters" : [
+					{
+						"parameters" : [ "leprechaun", false ],
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+					],
+					"subtype" : 0,
+					"val" : 100,
+					"type" : "REBIRTH"
+				},
+				"crystals" : {
+					"limiters" : [
+					{
+						"parameters" : [ "leprechaun", false ],
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+					],
+					"type" : "SPECIAL_CRYSTAL_GENERATION"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Fortune has always been associated with the Leprekauns since birth. Every few years a Leprekaun is born blessed with exceptional happiness. Godfrey himself does not fully know why his kin in his presence can be reborn from the ashes like Phoenixes. He explains it with... a Fortune!",
+			"name" : "Godfrey",
+			"specialty" : {
+				"description" : "{Leprechaun}\r\n\r\nAll Leprechauns under Godfrey command can rise from ashes like Phoenixes do. In addition, Leprechauns gain crystal generation ability.",
+				"name" : "Leprechaun/Crystals",
+				"tooltip" : "Leprechaun, crystal generation"
+			}
+		}
+	}
+}

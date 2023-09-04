@@ -1,0 +1,59 @@
+{
+	"rashnar" : {
+		"army" : [
+			{ "creature" : "werewolf", "max" : 8, "min" : 4 },
+			{ "creature" : "cerberus", "max" : 10, "min" : 5 },
+			{ "creature" : "hellSteed", "max" : 2, "min" : 1 }
+		],
+		"class" : "drifterM",
+		"images" : {
+			"large" : "rashnar/rashnar58x64.png",
+			"small" : "rashnar/rashnar48x32.png",
+			"specialtyLarge" : "rashnar/werewolf_spec44.png",
+			"specialtySmall" : "rashnar/werewolf_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "waterMagic" },
+			{ "level" : "basic", "skill" : "tactics" },
+			{ "level" : "basic", "skill" : "artillery" }
+			
+		],
+"specialty" : {
+	"bonuses" : {
+		"LIFE_DRAIN" : {
+			"limiters" : [
+				{
+					"parameters" : [ "werewolf", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"type" : "LIFE_DRAIN",
+			"val" : 10
+		},
+		"UNLIMITED_RETALIATIONS" : {
+			"limiters" : [
+				{
+					"parameters" : [ "werewolf", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"type" : "UNLIMITED_RETALIATIONS"
+		},
+		"crystal" : {
+			"subtype" : "resource.crystal",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 1
+		}
+	}
+},
+		"texts" : {
+			"biography" : "Rashnar the wolflord is said to be the fiercest, most feared werewolf in all the land, and he is definitively the alpha wolf of any pack in his command.",
+			"name" : "Rashnar",
+			"specialty" : {
+				"description" : "{Werewolves}\r\n\r\nWerewolves under Rashnar command gain unlimited retaliations and can drain 10% of attacked creature's life. Beside Rashnar generates 1 crystal per day.",
+				"name" : "Werewolves/Crystal",
+				"tooltip" : "Werewolves, Crystal"
+			}
+		}
+	}
+}

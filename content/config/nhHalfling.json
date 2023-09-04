@@ -1,0 +1,98 @@
+{
+	"nhHalfling":
+	{
+		"name" :
+		{
+			"plural" : "Scouts",
+			"singular" : "Scout"
+		},
+		"special" : true,
+		"faction" : "neutral",
+		"aiValue" : 1021,
+		"attack" : 5,
+		"damage" :
+		{
+			 "max" : 15,
+			 "min" : 5
+		},
+		"defense" : 5,
+		"fightValue" : 916,
+		"graphics" :
+		{
+			"animation" : "scout/CHalful.def",
+			"map" : "scout/mapCHalful.def",
+			"iconSmall" : "scout/chalf63.png",
+			"iconLarge" : "scout/chalf59.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "PHALF.DEF",
+				"attackClimaxFrame" : 6,
+				"offset" :
+				{
+					"lowerX" : 62,
+					"lowerY" : -93,
+					"middleX" : 62,
+					"middleY" : -93,
+					"upperX" : 62,
+					"upperY" : -93
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+
+			}
+		},
+		"growth" : 1,
+		"hitPoints" : 60,
+		"level" : 0,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack": "HALFATTK.wav",
+			"defend": "HALFDFND.wav",
+			"killed": "HALFKILL.wav",
+			"move": "HALFMOVE.wav",
+			"shoot": "HALFSHOT.wav",
+			"wince": "HALFWNCE.wav"
+ 		},
+		"speed" : 5,
+		"abilities" :
+		{
+		    "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.misfortune",
+				"val" : 3
+			}
+	    }
+	}
+}

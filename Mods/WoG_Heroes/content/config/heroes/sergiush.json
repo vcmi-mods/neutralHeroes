@@ -1,0 +1,52 @@
+{
+	"sergiush" : {
+		"army" : [
+			{ "creature" : "warZealot", "max" : 4, "min" : 2 },
+			{ "creature" : "monk", "max" : 6, "min" : 4 },
+			{ "creature" : "zealot", "max" : 6, "min" : 2 }
+		],
+		"class" : "drifterM",
+		"images" : {
+			"large" : "sergiush/sergiush58x64.png",
+			"small" : "sergiush/sergiush48x32.png",
+			"specialtyLarge" : "sergiush/warZealot_spec44.png",
+			"specialtySmall" : "sergiush/warZealot_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "airMagic" },
+			{ "level" : "basic", "skill" : "tactics" },
+			{ "level" : "basic", "skill" : "leadership" }
+			
+		],
+"specialty" : {
+	"bonuses" : {
+		"OPENING_BATTLE_SPELL" : {
+			"subtype" : "spell.precision",
+			"type" : "OPENING_BATTLE_SPELL",
+			"val" : 10,
+			"valueType" : "BASE_NUMBER"
+		},
+		"REBIRTH" : {
+			"limiters" : [
+				{
+					"parameters" : [ "warZealot", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : 1,
+			"type" : "REBIRTH",
+			"val" : 50
+		}
+	}
+},
+		"texts" : {
+			"biography" : "Sergiush is said to be one of the most single-minded and fervent leaders ever to walk the lands. He is said to never accept defeat, and to be so strong willed as to even cause death itself to step back from its claims on his armies, returning portions of his troops back to him after death.",
+			"name" : "Sergiush",
+			"specialty" : {
+				"description" : "{War Zealots}\r\n\r\nWar Zealots under Sergiush command can rebirth after death. Beside Sergiush casts expert Precision as opening battle spell.",
+				"name" : "War Zealots/Precision",
+				"tooltip" : "War Zealots, Precision"
+			}
+		}
+	}
+}

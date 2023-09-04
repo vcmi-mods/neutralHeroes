@@ -1,101 +1,81 @@
 {
 	"kharnus" : {
+		"army" : [
+			{ "creature" : "boar", "max" : 14, "min" : 7 },
+			{ "creature" : "boar", "max" : 10, "min" : 5 },
+			{ "creature" : "goblin", "max" : 10, "min" : 5 }
+		],
 		"class" : "drifterM",
 		"images" : {
-			"large" : "heroes/kharnus/portraitLarge.png",
-			"small" : "heroes/kharnus/portraitSmall.png",
-			"specialtyLarge" : "heroes/kharnus/specialtyLarge.png",
-			"specialtySmall" : "heroes/kharnus/specialtySmall.png"
+			"large" : "kharnus/kharnus58x64.png",
+			"small" : "kharnus/kharnus48x32.png",
+			"specialtyLarge" : "kharnus/boar_spec44.png",
+			"specialtySmall" : "kharnus/boar_spec32.png"
 		},
-		"army" : [
-			{
-				"creature" : "boar",
-				"min" : 7,
-				"max" : 14
-			},
-			{
-				"creature" : "boar",
-				"min" : 5,
-				"max" : 10
-			},
-			{
-				"creature" : "goblin",
-				"min" : 5,
-				"max" : 10
-			}
-		],
 		"skills" : [
-			{
-				"skill" : "offence",
-				"level" : "advanced"
-			},
-			{
-				"skill" : "armorer",
-				"level" : "basic"
-			},
-			{
-				"skill" : "ballistics",
-				"level" : "basic"
-			}
+			{ "level" : "advanced", "skill" : "offence" },
+			{ "level" : "basic", "skill" : "armorer" },
+			{ "level" : "basic", "skill" : "ballistics" }
+			
 		],
-		"specialty" : {
-			"bonuses" : {
-				"JOUSTING" : {
-					"type" : "JOUSTING",
-					"val" : 1,
-					"limiters" : [
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [ "boar", false ]
-						}
-					]
-				},
-				"attack" : {
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack",
-					"limiters" : [
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [ "boar", false ]
-						}
-					],
-					"updater" : {
-						"type" : "GROWS_WITH_LEVEL",
-						"parameters" : [ 6, 2 ]
-					}
-				},
-				"defence" : {
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence",
-					"limiters" : [
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [ "boar", false ]
-						}
-					],
-					"updater" : {
-						"type" : "GROWS_WITH_LEVEL",
-						"parameters" : [ 6, 2 ]
-					}
-				},
-				"ore" : {
-					"type" : "GENERATE_RESOURCE",
-					"subtype" : "resource.ore",
-					"val" : 1
-				},
-				"wood" : {
-					"type" : "GENERATE_RESOURCE",
-					"subtype" : "resource.wood",
-					"val" : 1
+"specialty" : {
+	"bonuses" : {
+		"JOUSTING" : {
+			"limiters" : [
+				{
+					"parameters" : [ "boar", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
 				}
+			],
+			"type" : "JOUSTING",
+			"val" : 1
+		},
+		"attack" : {
+			"limiters" : [
+				{
+					"parameters" : [ "boar", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "primSkill.attack",
+			"type" : "PRIMARY_SKILL",
+			"updater" : {
+				"parameters" : [ 6, 2 ],
+				"type" : "GROWS_WITH_LEVEL"
 			}
 		},
+		"defence" : {
+			"limiters" : [
+				{
+					"parameters" : [ "boar", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "primSkill.defence",
+			"type" : "PRIMARY_SKILL",
+			"updater" : {
+				"parameters" : [ 5, 2 ],
+				"type" : "GROWS_WITH_LEVEL"
+			}
+		},
+		"ore" : {
+			"subtype" : "resource.ore",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 1
+		},
+		"wood" : {
+			"subtype" : "resource.wood",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 1
+		}
+	}
+},
 		"texts" : {
-			"name" : "Kharnus",
 			"biography" : "Kharnus has always been an admirer of the human cavaliers, even when fighting against them. He found these noble knights so inspirational he studied them for years, and then trained his cadre of Boar riders to great degree. Now his Boar Brigade is a match for any cavalry unit they take on, and has earned the grudging respect of many a general.",
+			"name" : "Kharnus",
 			"specialty" : {
-				"name" : "Boars/Wood/Ore",
 				"description" : "{Boars}\r\n\r\nIncreases Attack and Defence of any Boars by 5% for every 2 levels. Also Boars gain Champions' justing ability. Besides, Boars generate one pile of wood and ore daily.",
+				"name" : "Boars/Wood/Ore",
 				"tooltip" : "Bonus: Boars, wood, ore"
 			}
 		}

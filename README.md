@@ -1,17 +1,2 @@
 # neutralHeroes
-Introducing The Drifter: A Mighty Affinity Neutral Hero Class!
-
-Embark on a journey with the all-new neutral hero class - The Drifter. These enigmatic heroes have a special affinity for neutral creatures, bringing a fresh dynamic to your gameplay.
-
-Drifters can be found and hired exclusively in Taverns (both in towns and on the adventure map) or rescued from Prisons. While they might seem limited on random maps, they truly shine on custom maps, with the unique gameplay they offer.
-
-To enhance their usefulness, all Drifters possess not just one, but two specialties! Alongside their mastery of creatures, they also excel in resources, spells, and other fascinating aspects of the game.
-
-Version 1.0 offers three separate submods, each with its own focus:
-- H3 Neutral Heroes: Meet eight new Drifters, each with specialties in standard H3 neutral creatures.
-- WoG Neutral Heroes: Discover eleven new Drifters with specialties in WoG neutral creatures (excluding Dracoliches).
-- HotA Neutral Heroes: Unveil two new Drifters, experts in HotA neutral creatures.
-  
-This universal mod can be effortlessly expanded to include new Drifters tailored to any mod featuring new Neutral Creatures. Mod authors are also empowered to configure and link their mods with Neutral Heroes to create their unique Drifters.
-
-For more details, refer to the attached neutralHeroes.pdf. Please note that using the additional WoG and HotA heroes requires the corresponding WoG and HotA mods for VCMI.
+ The Drifter is might affinity neutral hero class. The purpose of making the new neutral class is to introduce new heroes who have specialties in neutral creatures. Drifters can be hired only in Taverns (in town and on adventure map) and freed from Prisons. On random maps they’re pretty useless, on custom maps can bring some interesting variety in gameplay. But to make them more useful all Drifters have two specialties: not only in creatures but also in resources, spells and other features. Version 1.0 contains three submods (can be enabled/disabled separately):  - H3 Neutral Heroes: introduce eight new Drifters with specialties in standard H3 neutral creatures; - WoG Neutral Heroes: introduce eleven new Drifters with specialties in standard WoG neutral creatures (except Dracoliches); - HotA Neutral Heroes: introduce two new Drifters with specialties in standard HotA neutral creatures; This Mod is universal and can be easily be expanded to provide new Drifters for any mod containing new Neutral Creatures. Any other mod can be configured and linked with Neutral Heroes mod if mod’s author wants to make some his own drifters.  For more information, read attached neutralHeroes.pdf  Note, that to use the additional WoG and HotA heroes, you will need corresponding WoG and HotA mods for VCMI. The game will not launch without them. The same for Neural Rat mod.

@@ -1,0 +1,60 @@
+{
+	"morgana" : {
+		"army" : [
+			{ "creature" : "wogSorceress", "max" : 4, "min" : 2 },
+			{ "creature" : "santaGremlin", "max" : 12, "min" : 6 },
+			{ "creature" : "enchanter", "max" : 3, "min" : 1 }
+		],
+		"class" : "drifterF",
+		"female" : true,
+		"images" : {
+			"large" : "morgana/morgana58x64.png",
+			"small" : "morgana/morgana48x32.png",
+			"specialtyLarge" : "morgana/sorceress_spec44.png",
+			"specialtySmall" : "morgana/sorceress_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "resistance" },
+			{ "level" : "basic", "skill" : "luck" },
+			{ "level" : "basic", "skill" : "mysticism" }
+			
+		],
+"specialty" : {
+	"bonuses" : {
+		"CHANGES_SPELL_COST_FOR_ALLY" : {
+			"limiters" : [
+				{
+					"parameters" : [ "wogSorceress", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+			"val" : 3
+		},
+		"CHANGES_SPELL_COST_FOR_ENEMY" : {
+			"limiters" : [
+				{
+					"parameters" : [ "wogSorceress", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : 5,
+			"type" : "CHANGES_SPELL_COST_FOR_ENEMY"
+		},
+		"MANA_REGENERATION" : {
+			"type" : "MANA_REGENERATION",
+			"val" : 5
+		}
+	}
+},
+		"texts" : {
+			"biography" : "Morgana is a sorceress of great power. It is said she was born within one of the world's strongest leylines, absorbing its powers and becoming in tune with it. She is said to be able to control the flow of magic in battle, easing the flow to her allies, and stemming the flow to her enemies.",
+			"name" : "Morgana",
+			"specialty" : {
+				"description" : "{Sorceress}\r\n\r\nSorceress under Morgana's command reduce spell cost for ally by 3 and increase by 5 for enemy. Also Morgana can regenerate additional 5 mana points per day.",
+				"name" : "Sorceress/Mana regeneration",
+				"tooltip" : "Sorceress, Mana regeneration"
+			}
+		}
+	}
+}
