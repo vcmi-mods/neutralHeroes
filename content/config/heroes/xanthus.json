@@ -1,122 +1,92 @@
 {
 	"xanthus" : {
+		"army" : [
+			{ "creature" : "goldGolem", "max" : 4, "min" : 2 },
+			{ "creature" : "goldGolem", "max" : 4, "min" : 2 },
+			{ "creature" : "ironGolem", "max" : 6, "min" : 3 }
+		],
 		"class" : "drifterM",
 		"images" : {
-			"large" : "heroes/xanthus/portraitLarge.png",
-			"small" : "heroes/xanthus/portraitSmall.png",
-			"specialtyLarge" : "heroes/xanthus/specialtyLarge.png",
-			"specialtySmall" : "heroes/xanthus/specialtySmall.png"
+			"large" : "xanthus/xanthus58x64.png",
+			"small" : "xanthus/xanthus48x32.png",
+			"specialtyLarge" : "xanthus/goldGolem_spec44.png",
+			"specialtySmall" : "xanthus/goldGolem_spec32.png"
 		},
-		"army" : [
-			{
-				"creature" : "goldGolem",
-				"min" : 2,
-				"max" : 4
-			},
-			{
-				"creature" : "goldGolem",
-				"min" : 2,
-				"max" : 4
-			},
-			{
-				"creature" : "ironGolem",
-				"min" : 3,
-				"max" : 6
-			}
-		],
 		"skills" : [
-			{
-				"skill" : "tactics",
-				"level" : "basic"
-			},
-			{
-				"skill" : "resistance",
-				"level" : "basic"
-			},
-			{
-				"skill" : "estates",
-				"level" : "basic"
-			}
+			{ "level" : "basic", "skill" : "tactics" },
+			{ "level" : "basic", "skill" : "resistance" },
+			{ "level" : "basic", "skill" : "estates" }
+			
 		],
+		
 		"specialty" : {
 			"bonuses" : {
 				"casts":{
 					"type" : "CASTS",
 					"val": 3,
-					"limiters": [
-						{
-							"type":"CREATURE_TYPE_LIMITER",
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
 							"parameters": [ "goldGolem", false ]
-						}
-					]
+					} ]
 				},
 				"casts2":{
 					"type" : "CASTS",
 					"val": 3,
-					"limiters": [
-						{
-							"type":"CREATURE_TYPE_LIMITER",
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
 							"parameters": [ "diamondGolem", false ]
-						}
-					]
+					} ]
 				},
 				"ironGolemSummoning": {
 					"type" : "SPELLCASTER",
 					"subtype": "spell.summonIronGolem",
 					"val": 0,
-					"limiters": [
-						{
-							"type":"CREATURE_TYPE_LIMITER",
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
 							"parameters": [ "goldGolem", false ]
-						}
-					]
+					} ]
 				},
 				"summonIronPower" : {
 					"type" : "SPECIFIC_SPELL_POWER",
 					"subtype" : "spell.summonIronGolem",
 					"val" : 100,
-					"limiters": [
-						{
-							"type":"CREATURE_TYPE_LIMITER",
-							"parameters": [ "goldGolem", false ]
-						}
-					]
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+						"parameters": [ "goldGolem", false ]
+					} ]
 				},
 				"stoneGolemSummoning": {
 					"type" : "SPELLCASTER",
 					"subtype": "spell.summonStoneGolem",
 					"val": 0,
-					"limiters": [
-						{
-							"type":"CREATURE_TYPE_LIMITER",
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
 							"parameters": [ "diamondGolem", false ]
-						}
-					]
-				},
-				"summonStonePower" : {
-					"type" : "SPECIFIC_SPELL_POWER",
+					} ]
+					},
+				"summonStonePower" : 
+				{
+				"type" : "SPECIFIC_SPELL_POWER",
 					"subtype" : "spell.summonStoneGolem",
 					"val" : 100,
-					"limiters": [
-						{
-							"type":"CREATURE_TYPE_LIMITER",
-							"parameters": [ "diamondGolem", false ]
-						}
-					]
+					"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+						"parameters": [ "diamondGolem", false ]
+					} ]
 				},
 				"gold" : {
-					"type" : "GENERATE_RESOURCE",
 					"subtype" : "resource.gold",
-					"val" : 350
+					"type" : "GENERATE_RESOURCE",
+				"val" : 350
 				}
 			}
 		},
 		"texts" : {
-			"name" : "Xanthus",
 			"biography" : "Xanthus rose to power during the wrath of the gods, quickly becoming known as the 'Lord of Golems' for his ability to lead his fellows in battle with almost supernatural ability, summoning many of his troops seemingly from thin air.",
+			"name" : "Xanthus",
 			"specialty" : {
-				"name" : "Golems/Gold",
 				"description" : "{Golems}\r\n\r\nDuring battle from the dead stack Gold Golems can summon Iron Golems and Diamond Golems can summon Stone Golems. Beside heroes increases kingdom's income by 350.",
+				"name" : "Golems/Gold",
 				"tooltip" : "Bonus: Golems, gold"
 			}
 		}

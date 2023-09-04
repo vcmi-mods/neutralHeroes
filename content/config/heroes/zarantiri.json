@@ -1,69 +1,51 @@
 {
 	"zarantiri" : {
-		"class" : "drifterF",
-		"female" : true,
-		"images" : {
-			"large" : "heroes/zarantiri/portraitLarge.png",
-			"small" : "heroes/zarantiri/portraitSmall.png",
-			"specialtyLarge" : "heroes/zarantiri/specialtyLarge.png",
-			"specialtySmall" : "heroes/zarantiri/specialtySmall.png"
-		},
 		"army" : [
-			{
-				"creature" : "mummy",
-				"min" : 4,
-				"max" : 8
-			},
-			{
-				"creature" : "mummy",
-				"min" : 4,
-				"max" : 6
-			},
-			{
-				"creature" : "walkingDead",
-				"min" : 6,
-				"max" : 12
-			}
+			{ "creature" : "mummy", "max" : 8, "min" : 4 },
+			{ "creature" : "mummy", "max" : 6, "min" : 4 },
+			{ "creature" : "walkingDead", "max" : 12, "min" : 6 }
 		],
-		"skills" : [
-			{
-				"skill" : "necromancy",
-				"level" : "advanced"
-			},
-			{
-				"skill" : "scouting",
-				"level" : "advanced"
-			}
-		],
-		"specialty" : {
-			"bonuses" : {
-				"CREATURE_DAMAGE" : {
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : 2,
-					"limiters" : [
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [ "mummy", true ]
-						}
-					],
-					"updater" : {
-						"type" : "GROWS_WITH_LEVEL",
-						"parameters" : [ 3 ]
-					}
-				},
-				"curse" : {
-					"type" : "SPECIAL_PECULIAR_ENCHANT",
-					"subtype" : "spell.curse",
-					"addInfo" : 0
-				}
-			}
+		"class" : "drifterF",
+		"images" : {
+			"large" : "zarantiri/zarantiri58x64.png",
+			"small" : "zarantiri/zarantiri48x32.png",
+			"specialtyLarge" : "zarantiri/mummy_spec44.png",
+			"specialtySmall" : "zarantiri/mummy_spec32.png"
 		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "necromancy" },
+			{ "level" : "advanced", "skill" : "scouting" }
+			
+		],
+		
+"specialty" : {
+	"bonuses" : {
+		"CREATURE_DAMAGE" : {
+			"limiters" : [
+				{
+					"parameters" : [ "mummy", true ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"updater" : { "parameters" : [ 3 ], "type" : "GROWS_WITH_LEVEL" },
+			"subtype" : 2,
+			"type" : "CREATURE_DAMAGE"
+		},
+		"curse" : {
+			"addInfo" : 0,
+			"subtype" : "spell.curse",
+			"type" : "SPECIAL_PECULIAR_ENCHANT"
+		}
+	}
+},
+		
+		"female" : true,
 		"texts" : {
-			"name" : "Zarantiri",
 			"biography" : "Zarantiri is a powerful mummy, who is said to have been chosen by the gods themselves to wreak havoc and be an agent of chaos. Zarantiri seems to have been blessed with the ability to strengthen other mummies in her command, and to curse her enemies with powerful curses.",
+			"name" : "Zarantiri",
 			"specialty" : {
-				"name" : "Mummies/Curse",
 				"description" : "{Mummies}\r\n\r\nIncreases maximum damage of any Mummies by 5% for every 3 levels. Beside hero can cast Curse with increased effect.",
+				"name" : "Mummies/Curse",
 				"tooltip" : "Bonus: Mummies, Curse"
 			}
 		}

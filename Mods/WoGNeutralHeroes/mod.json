@@ -8,7 +8,10 @@
 	"licenseURL" : "",
 	"version" : "1.0",
 	"keepDisabled" : true,
-	"depends" : [ "wake-of-gods" ],
+		"depends" : [ 
+		"wake-of-gods",
+		"wake-of-gods.messengersandemissaries" 
+	],
 	"heroes" : [
 		"config/heroes/cristian",
 		"config/heroes/cyrilla",

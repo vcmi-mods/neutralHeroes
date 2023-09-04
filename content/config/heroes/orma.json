@@ -1,94 +1,77 @@
 {
 	"orma" : {
-		"class" : "drifterF",
-		"female" : true,
-		"images" : {
-			"large" : "heroes/orma/portraitLarge.png",
-			"small" : "heroes/orma/portraitSmall.png",
-			"specialtyLarge" : "heroes/orma/specialtyLarge.png",
-			"specialtySmall" : "heroes/orma/specialtySmall.png"
-		},
 		"army" : [
-			{
-				"creature" : "halfling",
-				"min" : 15,
-				"max" : 30
-			},
-			{
-				"creature" : "halfling",
-				"min" : 12,
-				"max" : 20
-			},
-			{
-				"creature" : "dwarf",
-				"min" : 8,
-				"max" : 14
-			}
+			{ "creature" : "halfling", "max" : 30, "min" : 15 },
+			{ "creature" : "halfling", "max" : 20, "min" : 12 },
+			{ "creature" : "dwarf", "max" : 14, "min" : 8 }
 		],
+		"class" : "drifterF",
+		"images" : {
+			"large" : "orma/orma58x64.png",
+			"small" : "orma/orma48x32.png",
+			"specialtyLarge" : "orma/halfling_spec44.png",
+			"specialtySmall" : "orma/halfling_spec32.png"
+		},
 		"skills" : [
-			{
-				"skill" : "archery",
-				"level" : "advanced"
-			},
-			{
-				"skill" : "luck",
-				"level" : "advanced"
-			}
+			{ "level" : "advanced", "skill" : "archery" },
+			{ "level" : "advanced", "skill" : "luck" }
 			
 		],
-		"specialty" : {
-			"bonuses" : {
-				"freeShooting" : {
-					"type" : "FREE_SHOOTING",
-					"val" : 20,
-					"limiters" : [
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [ "halfling", false ]
-						}
-					]
-				},
-				"attack" : {
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack",
-					"limiters" : [
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [ "halfling", false ]
-						}
-					],
-					"updater" : {
-						"type" : "GROWS_WITH_LEVEL",
-						"parameters" : [ 4 ]
-					}
-				},
-				"defence" : {
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence",
-					"limiters" : [
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [ "halfling", false ]
-						}
-					],
-					"updater" : {
-						"type" : "GROWS_WITH_LEVEL",
-						"parameters" : [ 2 ]
-					}
-				},
-				"magicArrow" : {
-					"type" : "SPECIAL_PECULIAR_ENCHANT",
-					"subtype" : "spell.magicArrow",
-					"addInfo" : 0
+		
+"specialty" : {
+	"bonuses" : {
+		"freeShooting" : {
+			"limiters" : [
+				{
+					"parameters" : [ "halfling", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
 				}
+			],
+			"type" : "FREE_SHOOTING",
+			"val" : 20
+		},
+		"attack" : {
+			"limiters" : [
+				{
+					"parameters" : [ "halfling", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "primSkill.attack",
+			"type" : "PRIMARY_SKILL",
+			"updater" : {
+				"parameters" : [ 4 ],
+				"type" : "GROWS_WITH_LEVEL"
 			}
 		},
+		"defence" : {
+			"limiters" : [
+				{
+					"parameters" : [ "halfling", false ],
+					"type" : "CREATURE_TYPE_LIMITER"
+				}
+			],
+			"subtype" : "primSkill.defence",
+			"type" : "PRIMARY_SKILL",
+			"updater" : {
+				"parameters" : [ 2 ],
+				"type" : "GROWS_WITH_LEVEL"
+			}
+		},
+		"magicArrow" : {
+			"addInfo" : 0,
+			"subtype" : "spell.magicArrow",
+			"type" : "SPECIAL_PECULIAR_ENCHANT"
+		}
+	}
+},
+		"female" : true,
 		"texts" : {
-			"name" : "Orma",
 			"biography" : "Leader of the halfling's community, Orma is beloved by her peoples. In combat she is fearless and wise, and it is said she can hurl energy stones with the accuracy of the strongest Magic Arrow spell.",
+			"name" : "Orma",
 			"specialty" : {
-				"name" : "Halflings/Magic Arrow",
 				"description" : "{Halflings}\r\n\r\nIncreases Attack and Defence of any Halflings by 5% for every level and Halflings can shoot even if otherwise blocked. Beside Orma can cast Magic Arrow with increased effect.",
+				"name" : "Halflings/Magic Arrow",
 				"tooltip" : "Bonus: Halflings, magic arrow"
 			}
 		}
