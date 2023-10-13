@@ -1,6 +1,8 @@
 {
 	"creatures.neutral-heroes.nhHalfling.name.plural" : "Scouts",
 	"creatures.neutral-heroes.nhHalfling.name.singular" : "Scout",
+	"spell.neutral-heroes.summonStoneGolem.name" : "Summon Stone Golems",
+	"spell.neutral-heroes.summonIronGolem.name" : "Summon Iron Golems",
 	"hero.neutral-heroes.ernest.biography" : "厄内斯特长期以来一直是社区中受人尊敬的成员.当遇到麻烦和战争时，欧内斯特通常是第一个组织农民保卫自己家园的人，他将同胞们组织成一支使任何普通民众感到自豪的力量。",
 	"hero.neutral-heroes.ernest.name" : "厄内斯特",
 	"hero.neutral-heroes.ernest.specialty.description" : "达到5级以后提高农民的攻击力与防御力。为王国每天额外提供350个金币。",

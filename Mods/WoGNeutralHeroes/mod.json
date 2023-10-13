@@ -8,9 +8,9 @@
 	"licenseURL" : "",
 	"version" : "1.0",
 	"keepDisabled" : true,
-		"depends" : [ 
-		"wake-of-gods",
-		"wake-of-gods.messengersandemissaries" 
+	"depends" : [
+		"wake-of-gods.creatures",
+		"wake-of-gods.messengersandemissaries"
 	],
 	"heroes" : [
 		"config/heroes/cristian",
