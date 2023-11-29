@@ -21,7 +21,7 @@
 		"1.07"   : ["fix for wog Sorceresses"],
 		"1.08"   : ["Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"],
 		"1.09"   : ["One more fix for wog Sorceresses"],
-		"1.10"   : ["Compatibility with new WoG and HotA versions"]
+		"1.10"   : ["Compatibility with new WoG and HotA versions"],
 		"1.10"   : ["Compatibility with new WoG and HotA versions"],
 		"1.11"   : ["Update to vcmi-1.4 format"]
     },
