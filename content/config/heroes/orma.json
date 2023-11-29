@@ -37,7 +37,7 @@
 					"type" : "CREATURE_TYPE_LIMITER"
 				}
 			],
-			"subtype" : "primSkill.attack",
+			"subtype" : "attack",
 			"type" : "PRIMARY_SKILL",
 			"updater" : {
 				"parameters" : [ 4 ],
@@ -51,7 +51,7 @@
 					"type" : "CREATURE_TYPE_LIMITER"
 				}
 			],
-			"subtype" : "primSkill.defence",
+			"subtype" : "defence",
 			"type" : "PRIMARY_SKILL",
 			"updater" : {
 				"parameters" : [ 2 ],

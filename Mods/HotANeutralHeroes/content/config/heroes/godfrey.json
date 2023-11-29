@@ -42,7 +42,7 @@
 			"bonuses" : {
 				"rebirth" : {
 					"type" : "REBIRTH",
-					"subtype" : 0,
+					"subtype" : "rebirthRegular",
 					"val" : 100,
 					"limiters" : [
 						{

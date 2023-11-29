@@ -43,7 +43,7 @@
 			"bonuses" : {
 				"attack" : {
 					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
 					"limiters" : [
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
@@ -57,7 +57,7 @@
 				},
 				"defence" : {
 					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence",
+					"subtype" : "defence",
 					"limiters" : [
 						{
 							"type" : "CREATURE_TYPE_LIMITER",

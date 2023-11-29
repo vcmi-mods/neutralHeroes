@@ -53,6 +53,7 @@
 				},
 				"MOVEMENT" : {
 					"type" : "MOVEMENT",
+					"subtype" : "heroMovementLand",
 					"val" : 500,
 					//"propagator" : "HERO"
 					"limiters" : [

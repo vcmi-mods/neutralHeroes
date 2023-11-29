@@ -31,7 +31,7 @@
 						"updater" : { "parameters" : [ 4 ], "type" : "GROWS_WITH_LEVEL" },
 						"type" : "CREATURE_DAMAGE",
 						"val" : 2,
-						"subtype" : 0
+						"subtype" : "creatureDamageBoth"
 				},
 				"gold" :{ 
 						"subtype" : "resource.gold", 

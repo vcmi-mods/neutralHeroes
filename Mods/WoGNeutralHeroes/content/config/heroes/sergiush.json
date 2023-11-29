@@ -49,7 +49,7 @@
 				},
 				"REBIRTH" : {
 					"type" : "REBIRTH",
-					"subtype" : 1,
+					"subtype" : "rebirthSpecial",
 					"val" : 50,
 					"limiters" : [
 						{
