@@ -34,7 +34,7 @@
 	},
 	"chinese" : {
 		"name" : "中立英雄",
-		"description" : "中立英雄.",
+		"description" : "该模组创建了名为浪人（Drifter）的中立英雄职业。浪人可以在酒馆雇佣，但不能选择作为起始英雄。",
 		"translations" : [
 			"translation/neutral-heroes/chinese.json"
 		]
