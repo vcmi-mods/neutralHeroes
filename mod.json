@@ -1,5 +1,5 @@
 {
-	"version" : "1.12",
+	"version" : "1.13",
 	"author" : "avatar, Nephretes, Witchking, draeganfire, MK. Portraits are taken from various sources from the net.",
 	"contact" : "http://www.vault.acidcave.net/download.php?id=553",
 	"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
@@ -23,7 +23,8 @@
 		"1.09"   : ["One more fix for wog Sorceresses"],
 		"1.10"   : ["Compatibility with new WoG and HotA versions"],
 		"1.11"   : ["Update to vcmi-1.4 format"],
-		"1.12"   : ["Adjusted Commanders stats"]
+		"1.12"   : ["Adjusted Commanders stats"],
+		"1.13"   : ["Better submods system compatibility", "Fixed commanders' Magic Resistance bonus"]
     },
 	"german" : {
 		"name" : "Neutrale Helden",

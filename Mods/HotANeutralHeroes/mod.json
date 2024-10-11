@@ -1,13 +1,13 @@
 {
 	"name" : "HotA Neutral Heroes",
 	"description" : "HotA Neutral Heroes",
-	"modType" : "Heroes",
+	"modType" : "Compatibility",
 	"author" : "",
 	"contact" : "",
 	"licenseName" : "",
 	"licenseURL" : "",
 	"version" : "1.2",
-	"keepDisabled" : true,
+	"keepDisabled" : false,
 	"depends" : [ 
 		"hota.cove",
 		"hota.neutralcreatures",
