@@ -52,7 +52,7 @@
 	"hero.neutral-heroes.romires.name": "Romires",
 	"hero.neutral-heroes.romires.specialty.description": "Zvyšuje útok Nomádů o +1 a umožňuje jim útok dvakrát. Každý den poskytuje království jednu další drahokam.",
 	"hero.neutral-heroes.romires.specialty.name": "Nomádi/ Drahokam",
-	"hero.neutral-heroes.romires.specialty.tooltip": "Specializace: Nomádi, Drahokam"
+	"hero.neutral-heroes.romires.specialty.tooltip": "Specializace: Nomádi, Drahokam",
 	"hero.neutral-heroes.xanthus.biography": "Xanthus se narodil v hněvu bohů a pro své téměř nadpřirozené schopnosti vést společníky do boje je nazýván 'Král golemů'. Zdá se, že dokáže neustále z řídkého vzduchu volat své vojáky.",
 	"hero.neutral-heroes.xanthus.name": "Xanthus",
 	"hero.neutral-heroes.xanthus.specialty.description": "Může vyvolat železné golemy ze zemřelých zlatých golemů a kamenné golemy ze zemřelých diamantových golemů. Poskytuje království každý den 350 zlatých navíc.",
@@ -82,7 +82,7 @@
 	"hero.neutral-heroes.hotaneutralheroes.oukranos.name": "Oukranos",
 	"hero.neutral-heroes.hotaneutralheroes.oukranos.specialty.description": "{Duše nárožníků}\r\n\r\nKaždých 5 úrovní zvyšuje rychlost nárožníků o 5 % a vedení nárožníků nezpůsobuje odvetné útoky. Oukranos vždy vrhá zaklínadla Očarování s vysokým účinkem.",
 	"hero.neutral-heroes.hotaneutralheroes.oukranos.specialty.name": "Duše nárožníků/ Očarování",
-	"hero.neutral-heroes.hotaneutralheroes.oukranos.specialty.tooltip": "Specializace: Duše nárožníků, Očarování"
+	"hero.neutral-heroes.hotaneutralheroes.oukranos.specialty.tooltip": "Specializace: Duše nárožníků, Očarování",
 	"hero.neutral-heroes.wogneutralheroes.cristian.biography": "Cristian je označován jako 'Generál ledu a ohně'. Prý se jeho lukostřelci pod jeho velením osvědčují jak v chladných severních krajích, tak v žhavých sopečných oblastech.",
 	"hero.neutral-heroes.wogneutralheroes.cristian.name": "Cristian",
 	"hero.neutral-heroes.wogneutralheroes.cristian.specialty.description": "{Polární lukostřelci}\r\n\r\nCristian může přeměnit polární lukostřelce na lávové lukostřelce a naopak. Kromě toho poskytuje Cristian každý den království 1 rtuť navíc.",
@@ -137,7 +137,7 @@
 	"hero.neutral-heroes.wogneutralheroes.unrish.name": "Unrish",
 	"hero.neutral-heroes.wogneutralheroes.unrish.specialty.description": "{Posel prvků}\r\n\r\nUnrish může povýšit posla prvků na jinou jednotku. Kromě toho každý den poskytuje království Unrish dodatečný kámen.",
 	"hero.neutral-heroes.wogneutralheroes.unrish.specialty.name": "Posel prvků/ Kámen",
-	"hero.neutral-heroes.wogneutralheroes.unrish.specialty.tooltip": "Specializace: Posel prvků, Kámen"
+	"hero.neutral-heroes.wogneutralheroes.unrish.specialty.tooltip": "Specializace: Posel prvků, Kámen",
 	"heroClass.neutral-heroes.drifterF.name" : "Tulačka",
 	"heroClass.neutral-heroes.drifterM.name" : "Tulák"
 }
