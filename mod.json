@@ -1,5 +1,5 @@
 {
-	"version" : "1.15",
+	"version" : "1.16",
 	"author" : "avatar, Nephretes, Witchking, draeganfire, MK. Portraits are taken from various sources from the net.",
 	"contact" : "http://www.vault.acidcave.net/download.php?id=553",
 	"description" : "Mod creates neutral heroes class called Drifter. Drifter can be hired in Tavers, but can't chosen as starting heroes.",
@@ -26,7 +26,8 @@
 		"1.12"   : ["Adjusted Commanders stats"],
 		"1.13"   : ["Better submods system compatibility", "Fixed commanders' Magic Resistance bonus"],
 		"1.14"   : ["Czech translation by George King"],
-                "1.15"   : ["Polish translation by FallainBlack"]
+		"1.15"   : ["Polish translation by FallainBlack"],
+		"1.16"   : ["Minor fixes"]
     },
 	"german" : {
 		"name" : "Neutrale Helden",
@@ -45,14 +46,13 @@
 	"czech" : {
 		"name": "Neutrální hrdinové",
 		"description": "Tento mod vytváří neutrální třídu hrdinů zvanou Tulák. Tuláci mohou být najímáni v putyce, ale nelze je vybrat jako startovní hrdiny.",
-		
 		"translations" : [
 			"translation/neutral-heroes/czech.json"
 		]
 	},
 	"polish" : {
 		"name": "Bohaterowie Neutralni",
-		"description": "Mod dodaje klasę bohaterów neutralnych zwanych Wędrowcami. Wędrowców można zrekrutować w Tawernie, ale nie można ich wybrać na bohatera początkowego."
+		"description": "Mod dodaje klasę bohaterów neutralnych zwanych Wędrowcami. Wędrowców można zrekrutować w Tawernie, ale nie można ich wybrać na bohatera początkowego.",
 		"translations" : [
 			"translation/neutral-heroes/polish.json"
 		]
