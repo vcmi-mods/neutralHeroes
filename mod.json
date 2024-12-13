@@ -50,6 +50,13 @@
 			"translation/neutral-heroes/czech.json"
 		]
 	},
+	"russian" : {
+		"name": "Нейтральные герои",
+		"description": "Мод добавляет класс нейтральных героев под названием Странники. Странников можно нанять в Таверне, но нельзя выбрать в качестве стартового героя.",
+		"translations" : [
+			"translation/neutral-heroes/russian.json"
+		]
+	},
 	"polish" : {
 		"name": "Bohaterowie Neutralni",
 		"description": "Mod dodaje klasę bohaterów neutralnych zwanych Wędrowcami. Wędrowców można zrekrutować w Tawernie, ale nie można ich wybrać na bohatera początkowego.",
