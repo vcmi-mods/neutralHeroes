@@ -43,7 +43,7 @@
 	},
 	"czech" : {
 		"name": "Neutrální hrdinové",
-		"description": "Tento mod vytváří neutrální třídu hrdinů zvanou Tulák. Tuláci mohou být najímáni v putyce, ale nelze je vybrat jako startovní hrdiny."
+		"description": "Tento mod vytváří neutrální třídu hrdinů zvanou Tulák. Tuláci mohou být najímáni v putyce, ale nelze je vybrat jako startovní hrdiny.",
 		"translations" : [
 			"translation/neutral-heroes/czech.json"
 		]
